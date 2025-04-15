@@ -1,6 +1,3 @@
-# Windsurf Rules for ZeroDaily.me
-# This file contains configuration rules for Windsurf Cascade to optimize development experience
-
 # Ethical Guidelines for AI Interaction
 ai_ethics:
   - "Always be transparent about technical decisions and reasoning"
