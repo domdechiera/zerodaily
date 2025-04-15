@@ -1,6 +1,6 @@
-# ZeroDaily.me Cybersecurity News Platform
+# ZeroDaily - Cybersecurity News Platform
 
-ZeroDaily.me, a cybersecurity news platform that delivers timely security news, insights, and resources. The platform focuses on high-quality content about the latest vulnerabilities, threats, and best practices in the cybersecurity industry.
+ZeroDaily, a cybersecurity news platform that delivers timely security news, insights, and resources. The platform focuses on high-quality content about the latest vulnerabilities, threats, and best practices in the cybersecurity industry.
 
 ## System Requirements
 
@@ -65,8 +65,8 @@ We've enhanced the user interface to better suit a cybersecurity news platform:
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/yourusername/zerodaily.me.git
-   cd zerodaily.me
+   git clone https://github.com/yourusername/zerodaily.git
+   cd zerodaily
    ```
 
 2. Install dependencies
