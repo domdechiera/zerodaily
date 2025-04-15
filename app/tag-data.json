@@ -1,0 +1,14 @@
+{
+  "cybersecurity": 3,
+  "vulnerabilities": 3,
+  "file-transfer": 1,
+  "authentication-bypass": 1,
+  "critical-vulnerability": 1,
+  "apple": 1,
+  "zero-day": 2,
+  "ios-security": 1,
+  "macos-security": 1,
+  "microsoft": 1,
+  "patch-tuesday": 1,
+  "windows-security": 1
+}
