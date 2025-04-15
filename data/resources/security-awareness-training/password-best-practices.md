@@ -7,7 +7,6 @@ draft: false
 summary: "Learn how to create and enforce strong password policies, implement multi-factor authentication, and train employees on secure password management."
 type: "Resource"
 category: "security-awareness-training"
-authors: ['default']
 ---
 
 ## The Importance of Strong Password Policies

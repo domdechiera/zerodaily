@@ -7,7 +7,6 @@ draft: false
 summary: "A detailed guide for security teams responding to ransomware incidents, including containment strategies, forensic investigation steps, and recovery procedures."
 type: "Resource"
 category: "incident-response-playbooks"
-authors: ['default']
 ---
 
 ## Preparation Phase

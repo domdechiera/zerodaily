@@ -7,7 +7,6 @@ draft: false
 summary: "Learn how to identify sophisticated social engineering attempts, train employees on security best practices, and implement controls to protect your organization."
 type: "Resource"
 category: "security-awareness-training"
-authors: ['default']
 ---
 
 ## Understanding Social Engineering

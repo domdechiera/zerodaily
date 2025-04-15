@@ -7,7 +7,6 @@ draft: false
 summary: "A step-by-step checklist covering essential security controls for Linux servers, including user management, network security, file system protections, and monitoring configurations."
 type: "Resource"
 category: "security-hardening-checklists"
-authors: ['default']
 ---
 
 ## Initial Setup and Configuration
@@ -67,6 +66,7 @@ authors: ['default']
 ## System Hardening
 
 ### Kernel Hardening
+
 - [ ] Enable and configure kernel security modules (SELinux/AppArmor)
 - [ ] Set secure kernel parameters via sysctl
 - [ ] Disable core dumps
@@ -74,6 +74,7 @@ authors: ['default']
 - [ ] Restrict access to kernel logs
 
 ### Package Management
+
 - [ ] Configure automatic security updates
 - [ ] Verify package integrity during installation
 - [ ] Use only trusted repositories
@@ -81,6 +82,7 @@ authors: ['default']
 - [ ] Regularly audit installed packages
 
 ### Service Hardening
+
 - [ ] Configure each service to run with least privilege
 - [ ] Use systemd service sandboxing features
 - [ ] Implement resource limits for services
@@ -89,6 +91,7 @@ authors: ['default']
 ## Monitoring and Logging
 
 ### System Logging
+
 - [ ] Configure centralized logging
 - [ ] Enable detailed audit logging
 - [ ] Secure log files with appropriate permissions
@@ -96,12 +99,14 @@ authors: ['default']
 - [ ] Configure remote logging to a secure log server
 
 ### Intrusion Detection
+
 - [ ] Install and configure a host-based IDS (AIDE, Tripwire, etc.)
 - [ ] Set up regular file integrity checks
 - [ ] Configure automated alerts for suspicious activities
 - [ ] Implement process and user monitoring
 
 ### Performance Monitoring
+
 - [ ] Configure resource usage monitoring
 - [ ] Set up alerts for abnormal system behavior
 - [ ] Implement regular system health checks
@@ -109,18 +114,21 @@ authors: ['default']
 ## Regular Maintenance
 
 ### Backup and Recovery
+
 - [ ] Implement regular backup strategy
 - [ ] Test backup restoration process
 - [ ] Secure backup files with encryption
 - [ ] Store backups in multiple locations
 
 ### Security Testing
+
 - [ ] Perform regular vulnerability scans
 - [ ] Conduct periodic penetration testing
 - [ ] Review and test security controls
 - [ ] Update hardening configuration based on test results
 
 ### Documentation
+
 - [ ] Maintain detailed system documentation
 - [ ] Document all security configurations
 - [ ] Create and maintain incident response procedures
