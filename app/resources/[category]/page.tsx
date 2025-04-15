@@ -11,17 +11,15 @@ export const generateStaticParams = () => {
 }
 
 type Props = {
-  params: {
+  params: Promise<{
     category: string
-  }
+  }>
 }
 
 export async function generateMetadata(props: Props) {
-  // Properly await the params object
   const params = await props.params
   const category = params.category
-  
-  // Find the resource using the extracted params
+
   const resourceInfo = resourcesData.find((resource) => {
     return resource.slug === category
   })
@@ -40,11 +38,9 @@ export async function generateMetadata(props: Props) {
 }
 
 export default async function ResourceCategoryPage(props: Props) {
-  // Properly await the params object
   const params = await props.params
   const category = params.category
-  
-  // Find the resource using the extracted params
+
   const resourceInfo = resourcesData.find((resource) => {
     return resource.slug === category
   })
