@@ -7,11 +7,13 @@ draft: false
 summary: "A detailed guide for security teams responding to ransomware incidents, including containment strategies, forensic investigation steps, and recovery procedures."
 type: "Resource"
 category: "incident-response-playbooks"
+authors: ['default']
 ---
 
 ## Preparation Phase
 
 ### Required Incident Response Team Roles
+
 - Incident Commander
 - Technical Lead
 - Communications Lead
@@ -20,6 +22,7 @@ category: "incident-response-playbooks"
 - External Relations (if needed)
 
 ### Essential Tools and Resources
+
 - Offline copies of the playbook
 - Secure communication channels
 - Forensic investigation tools
@@ -30,6 +33,7 @@ category: "incident-response-playbooks"
 ## Detection and Analysis
 
 ### Initial Indicators of Compromise
+
 - Encrypted files with unusual extensions
 - Ransom notes on desktop or as text files
 - Unusual system behavior or performance
@@ -38,6 +42,7 @@ category: "incident-response-playbooks"
 - User reports of inaccessible files
 
 ### Immediate Assessment Steps
+
 1. **Confirm the Incident**: Verify ransomware presence through file samples and system behavior
 2. **Identify Ransomware Variant**: Use samples to determine specific strain
 3. **Assess Scope**: Determine affected systems, networks, and data
@@ -47,6 +52,7 @@ category: "incident-response-playbooks"
 ## Containment Strategies
 
 ### Immediate Containment Actions
+
 - Isolate affected systems from the network
 - Disable affected user accounts
 - Block relevant IOCs at network boundaries
@@ -55,6 +61,7 @@ category: "incident-response-playbooks"
 - Capture network traffic for analysis
 
 ### Decision Points
+
 - Criteria for system isolation
 - Thresholds for broader network segmentation
 - Conditions for complete network shutdown (extreme cases)
@@ -63,18 +70,21 @@ category: "incident-response-playbooks"
 ## Eradication and Recovery
 
 ### Malware Removal Process
+
 1. Identify persistence mechanisms
 2. Remove malware from affected systems
 3. Verify removal through scanning and monitoring
 4. Document all removed components for future reference
 
 ### Recovery Strategy Options
+
 - **Clean Rebuild**: Wipe and rebuild affected systems
 - **Restoration from Backups**: Verify backup integrity before restoration
 - **Partial Recovery**: Prioritize critical systems first
 - **Data Reconstruction**: When backups are unavailable or compromised
 
 ### Ransom Payment Considerations
+
 - Legal and regulatory implications
 - No guarantee of recovery
 - Encourages future attacks
@@ -85,6 +95,7 @@ category: "incident-response-playbooks"
 ## Post-Incident Activities
 
 ### Forensic Investigation
+
 - Determine initial access vector
 - Identify lateral movement techniques
 - Document data exfiltration evidence
@@ -92,6 +103,7 @@ category: "incident-response-playbooks"
 - Preserve evidence for potential legal proceedings
 
 ### Lessons Learned Process
+
 1. Conduct formal post-incident review
 2. Document gaps in detection and response
 3. Update security controls based on findings
@@ -100,6 +112,7 @@ category: "incident-response-playbooks"
 6. Conduct additional training if needed
 
 ### Reporting Requirements
+
 - Internal executive briefing
 - Customer/partner notifications
 - Regulatory reporting obligations
@@ -109,12 +122,14 @@ category: "incident-response-playbooks"
 ## Communication Templates
 
 ### Internal Communication
+
 - Initial incident notification
 - Status update template
 - Recovery progress reports
 - Post-incident summary
 
 ### External Communication
+
 - Customer notification
 - Media statement (if required)
 - Regulatory disclosure

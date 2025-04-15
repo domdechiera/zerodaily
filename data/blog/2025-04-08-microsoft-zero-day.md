@@ -1,10 +1,10 @@
 ---
-title: "Critical Microsoft Zero-Day Vulnerability: What You Need to Know"
+title: "Critical Microsoft Zero-Day Vulnerability CVE-2025-29824: What You Need to Know"
 date: "2025-04-08"
 tags: ['cybersecurity', 'Vulnerabilities', 'microsoft', 'patch-tuesday', 'windows-security', 'zero-day']
 draft: false
 summary: "Microsoft releases emergency patch for actively exploited Windows CLFS driver zero-day vulnerability CVE-2025-29824. Learn how to protect your systems now."
-authors: ['Your Name']
+authors: ['default']
 type: Blog
 ---
 

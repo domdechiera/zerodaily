@@ -7,6 +7,7 @@ draft: false
 summary: "A step-by-step checklist covering essential security controls for Linux servers, including user management, network security, file system protections, and monitoring configurations."
 type: "Resource"
 category: "security-hardening-checklists"
+authors: ['default']
 ---
 
 ## Initial Setup and Configuration

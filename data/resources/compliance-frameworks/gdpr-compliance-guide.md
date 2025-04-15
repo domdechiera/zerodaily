@@ -7,6 +7,7 @@ draft: false
 summary: "Learn how to align your security controls with GDPR requirements, implement data protection by design, and establish processes for handling data subject rights and breach notifications."
 type: "Resource"
 category: "compliance-frameworks"
+authors: ['default']
 ---
 
 ## Understanding GDPR from a Security Perspective

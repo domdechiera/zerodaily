@@ -7,6 +7,7 @@ draft: false
 summary: "Learn how to identify sophisticated phishing attempts, train employees on security best practices, and implement technical controls to protect your organization."
 type: "Resource"
 category: "security-awareness-training"
+authors: ['default']
 ---
 
 ## Understanding Modern Phishing Attacks
