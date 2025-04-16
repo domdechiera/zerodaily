@@ -10,8 +10,8 @@ interface AnalyticsData {
 const fallbackTrendingNews = [
   {
     title: 'CVE Program Faces Funding Crisis: Critical Cybersecurity Infrastructure at Risk',
-    href: '/blog/2025-04-13-crushftp-vulnerability',
-    date: '2025-04-13',
+    href: '/blog/2025-04-16-cve-program-funding-crisis',
+    date: '2025-04-16',
   },
   {
     title:
