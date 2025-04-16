@@ -9,44 +9,28 @@ interface AnalyticsData {
 // Fallback data for when Vercel analytics is not available
 const fallbackPopularResources = [
   {
-    title: 'OWASP Top 10 2024',
-    href: '/resources/owasp-top-10-2024',
-    category: 'Security Standards',
-    date: new Date().toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    }),
+    title: 'Social Engineering Defense: Protecting Your Organization',
+    href: '/resources/security-awareness-training/social-engineering-defense',
+    category: 'Security Awareness Training',
+    date: '',
   },
   {
-    title: 'NIST Cybersecurity Framework',
-    href: '/resources/nist-cybersecurity-framework',
-    category: 'Security Standards',
-    date: new Date().toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    }),
+    title: 'Vulnerability Prioritization Framework',
+    href: '/resources/vulnerability-management/vulnerability-prioritization-framework',
+    category: 'Vulnerability Management',
+    date: '',
   },
   {
-    title: 'MITRE ATT&CK Framework',
-    href: '/resources/mitre-attack-framework',
-    category: 'Threat Intelligence',
-    date: new Date().toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    }),
+    title: 'Web Application Penetration Testing Methodology',
+    href: '/resources/penetration-testing-guides/web-application-pentest-methodology',
+    category: 'Penetration Testing Guides',
+    date: '',
   },
   {
-    title: 'CIS Controls v8',
-    href: '/resources/cis-controls-v8',
-    category: 'Security Controls',
-    date: new Date().toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    }),
+    title: 'Ransomware Incident Response Playbook',
+    href: '/resources/incident-response-playbooks/ransomware-response-playbook',
+    category: 'Incident Response Playbooks',
+    date: '',
   },
 ]
 

@@ -9,22 +9,20 @@ interface AnalyticsData {
 // Fallback data for when Vercel analytics is not available
 const fallbackTrendingNews = [
   {
-    title: 'Understanding Zero Trust Security',
-    href: '/blog/understanding-zero-trust-security',
-    date: new Date().toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    }),
+    title:
+      'Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know',
+    href: '/blog/2025-04-13-crushftp-vulnerability',
+    date: '2025-04-13',
   },
   {
-    title: 'Latest Ransomware Trends',
-    href: '/blog/latest-ransomware-trends',
-    date: new Date().toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    }),
+    title: 'Apple Emergency Patches Released for Three Actively Exploited Zero-Day Vulnerabilities',
+    href: '/blog/2025-04-08-apple-zero-days',
+    date: '2025-04-08',
+  },
+  {
+    title: 'Critical Microsoft Zero-Day Vulnerability CVE-2025-29824: What You Need to Know',
+    href: '/blog/2025-04-08-microsoft-zero-day',
+    date: '2025-04-08',
   },
 ]
 
