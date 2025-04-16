@@ -19,5 +19,6 @@ Complete tasks in order.
 
 ## DONE
 
+- [x] Update sidebar fallbacks
 - [x] Cleanup `git status`
 - [x] Create high-quality SEO optimized posts for resource sections
