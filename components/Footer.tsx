@@ -11,6 +11,7 @@ export default function Footer() {
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={6} />
           <SocialIcon kind="x" href={siteMetadata.x} size={6} />
           <SocialIcon kind="bluesky" href={siteMetadata.bluesky} size={6} />
+          <SocialIcon kind="rss" href={`${siteMetadata.siteUrl}/feed.xml`} size={6} />
         </div>
         <div className="mb-8 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>{`© ${new Date().getFullYear()}`}</div>
