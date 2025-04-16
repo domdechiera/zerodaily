@@ -1,12 +1,12 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'ZeroDaily.me - Cybersecurity News',
+  title: 'ZeroDaily - Cybersecurity News',
   author: 'Dom De Chiera',
   headerTitle: 'ZeroDaily',
   description: 'Cybersecurity news, expert analysis, and zero-day threat updates—without the noise',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://zerodaily.me',
+  siteUrl: 'https://www.zerodaily.me',
   siteRepo: 'https://github.com/zerodailyme/zerodaily.me',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/social-banner.png`,
