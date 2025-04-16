@@ -8,9 +8,44 @@ interface Tool {
   isEditorsChoice?: boolean
 }
 
-export const categories = ['All', 'Password Management', 'Network Security', 'Antivirus']
+export const categories = [
+  'All',
+  'Password Management',
+  'Network Security',
+  'Antivirus',
+  'Cloud Storage',
+]
 
 export const toolsData: Tool[] = [
+  {
+    title: 'Proton VPN',
+    description: 'Open-source secure VPN service with advanced encryption and no-logs policy.',
+    link: 'https://protonvpn.com',
+    category: 'Network Security',
+    rating: 4.6,
+    price: 'Free, Plus from $9.99/month',
+    isEditorsChoice: true,
+  },
+  {
+    title: 'Proton Pass',
+    description:
+      'Open-source password manager with end-to-end encryption and hide-my-email aliases.',
+    link: 'https://proton.me/pass/',
+    category: 'Password Management',
+    rating: 4.8,
+    price: 'Free, Plus from $2.99/month',
+    isEditorsChoice: true,
+  },
+  {
+    title: 'Proton Drive',
+    description:
+      'Open-source end-to-end encrypted cloud storage, no one but you and the people you choose can access your files.',
+    link: 'https://proton.me/drive',
+    category: 'Cloud Storage',
+    rating: 4.6,
+    price: 'Free, Plus from $3.99/month',
+    isEditorsChoice: true,
+  },
   {
     title: 'NordVPN',
     description: 'Secure VPN service with advanced encryption and no-logs policy.',
@@ -18,7 +53,6 @@ export const toolsData: Tool[] = [
     category: 'Network Security',
     rating: 4.8,
     price: 'From $3.99/month',
-    isEditorsChoice: true,
   },
   {
     title: 'Bitwarden',
@@ -27,7 +61,6 @@ export const toolsData: Tool[] = [
     category: 'Password Management',
     rating: 4.7,
     price: 'Free, Premium from $10/year',
-    isEditorsChoice: true,
   },
   {
     title: 'Malwarebytes',
@@ -36,7 +69,6 @@ export const toolsData: Tool[] = [
     category: 'Antivirus',
     rating: 4.6,
     price: 'From $39.99/year',
-    isEditorsChoice: true,
   },
   {
     title: '1Password',
@@ -53,14 +85,6 @@ export const toolsData: Tool[] = [
     category: 'Network Security',
     rating: 4.7,
     price: 'From $6.67/month',
-  },
-  {
-    title: 'Kaspersky',
-    description: 'Comprehensive antivirus solution with advanced threat detection.',
-    link: 'https://kaspersky.com',
-    category: 'Antivirus',
-    rating: 4.5,
-    price: 'From $29.99/year',
   },
 ]
 
