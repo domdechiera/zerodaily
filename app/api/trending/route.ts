@@ -9,6 +9,11 @@ interface AnalyticsData {
 // Fallback data for when Vercel analytics is not available
 const fallbackTrendingNews = [
   {
+    title: 'CVE Program Faces Funding Crisis: Critical Cybersecurity Infrastructure at Risk',
+    href: '/blog/2025-04-13-crushftp-vulnerability',
+    date: '2025-04-13',
+  },
+  {
     title:
       'Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know',
     href: '/blog/2025-04-13-crushftp-vulnerability',
