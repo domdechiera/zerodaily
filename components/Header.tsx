@@ -29,7 +29,7 @@ const Header = () => {
   // Main navigation categories based on TheHackerNews style
   const mainNavLinks = [
     { href: '/', title: 'Home' },
-    { href: '/tags/data-breaches', title: 'Data Breaches' },
+    { href: '/tags/data-breach', title: 'Data Breaches' },
     { href: '/tags/cyber-attacks', title: 'Cyber Attacks' },
     { href: '/tags/vulnerabilities', title: 'Vulnerabilities' },
     { href: '/resources', title: 'Resources' },

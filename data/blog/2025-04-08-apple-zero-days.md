@@ -1,7 +1,7 @@
 ---
 title: "Apple Emergency Patches Released for Three Actively Exploited Zero-Day Vulnerabilities"
 date: "2025-04-08"
-tags: ['cybersecurity', 'vulnerabilities', 'apple', 'zero-day', 'ios-security', 'macos-security']
+tags: ['cybersecurity', 'vulnerabilities', 'cyber-attacks', 'apple', 'zero-day', 'ios-security', 'macos-security']
 draft: false
 summary: "Apple issues emergency updates for three zero-day vulnerabilities (CVE-2025-24200, CVE-2025-24201, CVE-2025-24085) being actively exploited in sophisticated attacks against specific targeted individuals. Update your devices now."
 authors: ['default']
