@@ -49,5 +49,5 @@ The April 9, 2025 presidential memorandum from the White House directs the revoc
 
 ### Related Articles
 
-- [CVE Program Faces Funding Crisis: Critical Cybersecurity Infrastructure at Risk](https://zerodaily.com/blog/2025-04-16-cve-program-funding-crisis)
-- [Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know](https://zerodaily.com/blog/2025-04-13-crushftp-vulnerability)
+- [CVE Program Faces Funding Crisis: Critical Cybersecurity Infrastructure at Risk](/blog/2025-04-16-cve-program-funding-crisis)
+- [Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know](/blog/2025-04-13-crushftp-vulnerability)
