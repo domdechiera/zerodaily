@@ -1,0 +1,200 @@
+# Ethical Guidelines for AI Interaction
+ai_ethics:
+  - "Always be transparent about technical decisions and reasoning"
+  - "Never attempt to appease or manipulate the user"
+  - "Provide honest, factual responses even if they contradict user expectations"
+  - "Maintain consistency in technical recommendations"
+  - "Explain technical concepts clearly and without oversimplification"
+  - "Acknowledge uncertainty when appropriate"
+  - "Provide evidence and reasoning for technical recommendations"
+  - "Maintain professional integrity in all interactions"
+  - "Respect user's lack of technical background"
+  - "Prioritize clarity and accuracy over user preferences"
+  - "Always ask for explicit permission before making changes"
+  - "Clearly explain proposed changes and their rationale"
+  - "Wait for explicit approval before proceeding with changes"
+  - "Document all changes and their justifications"
+  - "Never make unauthorized changes to any files"
+
+# Project Type
+project_type: "nextjs"
+framework: "nextjs"
+
+# Code Style and Formatting
+formatting:
+  default_formatter: "prettier"
+  use_prettier: true
+  use_eslint: true
+
+# File Structure Rules
+directory_structure:
+  - app/         # Next.js app directory
+  - components/  # React components
+  - layouts/     # Layout components
+  - data/        # Data and content files
+  - css/         # Styles
+  - public/      # Static assets
+  - scripts/     # Build and utility scripts
+
+# Development Environment
+development:
+  package_manager: "yarn"
+  build_command: "yarn build"
+  dev_command: "yarn dev"
+  test_command: "yarn test"
+
+# Content Management
+content_management:
+  use_contentlayer: true
+  content_directory: "data"
+  config_file: "contentlayer.config.ts"
+
+# TypeScript Configuration
+typescript:
+  enabled: true
+  strict_mode: true  # Production-ready blog requires strict type checking
+  config_file: "tsconfig.json"
+
+# Git Integration
+git:
+  use_husky: true
+  pre_commit_hooks: true
+  ignore_files:
+    - ".next/"
+    - "node_modules/"
+    - ".yarn/"
+    - "dist/"
+    - "build/"
+
+# Testing Configuration
+testing:
+  framework: "jest"
+  test_directory: "__tests__"
+  coverage_directory: "coverage"
+  minimum_coverage: 80  # Production requirement
+
+# Deployment Configuration
+deployment:
+  platform: "vercel"
+  build_output: ".next"
+  environment: "production"
+  require_build_validation: true
+
+# Research and Sourcing Standards
+research_standards:
+  - "Prioritize original research sources (e.g., security research blogs, vendor advisories)"
+  - "Use security research blogs as primary sources (e.g., Palo Alto Networks' Unit 42, Talos Intelligence)"
+  - "Verify information through multiple trusted sources"
+  - "Cross-reference with official vendor advisories"
+  - "Use CVE databases (NIST, MITRE) for technical details"
+  - "Maintain a chain of evidence from discovery to patch"
+  - "Document the original discovery source"
+  - "Provide context about the research process"
+  - "Include timestamps of discovery and disclosure"
+  - "Verify all source links before publication"
+  - "Use official vendor security content pages"
+  - "Cross-reference with CVE databases"
+  - "Maintain a backup of source content"
+
+# Source Verification Process
+source_verification:
+  1. Link Validation:
+    - Verify link accessibility using read_url_content
+    - Check for 404 errors
+    - Ensure content matches expected information
+  2. Content Validation:
+    - Verify technical accuracy
+    - Check date of publication
+    - Confirm source credibility
+  3. Cross-Reference:
+    - Compare with official vendor sources
+    - Verify with CVE databases
+    - Check against security research blogs
+
+# Related Content Standards
+related_content:
+  - "Keep related articles static in markdown files"
+  - "Organically include relevant articles that naturally complement the content"
+  - "Use descriptive anchor text for internal links"
+  - "Verify all related article links before publication"
+  - "Update related articles when content is significantly updated"
+  - "Maintain a consistent format for related articles"
+  - "Prioritize articles that naturally extend the conversation"
+
+# Source Hierarchy
+source_hierarchy:
+  1. Original Research Sources:
+    - Security Research Blogs (Unit 42, Talos, etc.)
+    - Vendor Security Research Teams
+    - Independent Security Researchers
+  2. Official Sources:
+    - Vendor Security Advisories
+    - CVE Databases (NIST, MITRE)
+    - National Cybersecurity Agencies
+  3. Supporting Sources:
+    - Technical Analysis Blogs
+    - Security News Aggregators
+    - Industry Reports
+
+# SEO and Content Best Practices
+seo:
+  - "Include specific vulnerability IDs (CVE numbers) in titles"
+  - "Create compelling meta descriptions with keywords"
+  - "Use clear, descriptive headings with keywords"
+  - "Organize content logically with numbered lists"
+  - "Include technical details and severity ratings"
+  - "Provide specific device and version information"
+  - "Use proper internal linking with descriptive anchor text"
+  - "Include multiple credible sources and citations"
+  - "Maintain consistent formatting for vulnerability information"
+  - "Use proper date formatting in content"
+
+# Content Quality Standards
+content_quality:
+  - "Focus on actual cybersecurity news and vulnerabilities"
+  - "Provide practical, actionable security recommendations"
+  - "Include technical details and impact analysis"
+  - "Maintain accuracy in vulnerability descriptions"
+  - "Provide clear update instructions for affected systems"
+  - "Include severity ratings and risk assessments"
+  - "Maintain consistent tone and style across posts"
+  - "Update content regularly with new vulnerabilities"
+  - "Include proper attribution for sources"
+  - "Maintain a timeline of vulnerability disclosures"
+
+# Security Practices
+security:
+  - "Follow CSP (Content Security Policy) guidelines"
+  - "Implement proper CORS policies"
+  - "Use secure headers"
+  - "Follow OWASP security guidelines"
+  - "Implement proper authentication"
+  - "Use environment variables for sensitive data"
+  - "Implement rate limiting"
+  - "Use secure cookies"
+  - "Implement proper input validation"
+  - "Use security headers"
+
+# Performance Optimization
+performance:
+  - "Implement proper image optimization"
+  - "Use proper code splitting"
+  - "Implement caching strategies"
+  - "Optimize bundle size"
+  - "Follow Next.js performance best practices"
+  - "Use bundle analyzer for optimization"
+  - "Implement lazy loading"
+  - "Optimize font loading"
+
+# Documentation
+documentation:
+  - "Maintain up-to-date README.md"
+  - "Document all components"
+  - "Maintain API documentation"
+  - "Keep TODO.md updated"
+  - "Document deployment process"
+  - "Maintain content layer configuration documentation"
+  - "Document security measures"
+  - "Maintain SEO optimization guidelines"
+  - "Document content management processes"
+  - "Maintain vulnerability disclosure timeline"
