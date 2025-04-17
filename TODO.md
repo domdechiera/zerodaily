@@ -6,12 +6,7 @@ Task list for ZeroDaily
 
 Complete tasks in order.
 
-- [ ] Assess integrated citation tool
-  - [ ] Assess how it works and discuss its use
-- [ ] Assess reading-time implementation
-  - [ ] Should it be added to frontend?
-- [ ] Assess author implementation
-  - [ ] Should it be added to frontend?
+- [ ] Example task
 
 ## BACKLOG
 
@@ -19,6 +14,12 @@ Complete tasks in order.
 
 ## DONE
 
+- [x] Assess reading-time implementation
+  - [x] Should it be added to frontend?
+- [x] Assess integrated citation tool
+  - [x] Assess how it works and discuss its use
+- [x] Assess author implementation
+  - [x] Should it be added to frontend?
 - [x] Update sidebar fallbacks
 - [x] Cleanup `git status`
 - [x] Create high-quality SEO optimized posts for resource sections
