@@ -104,7 +104,7 @@ export default function PostLayout({ content, next, prev, children, authorDetail
               )}
             </div>
             <footer>
-              <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
+              <div className="flex flex-row flex-wrap justify-between text-sm font-medium sm:text-base">
                 {prev && prev.path && (
                   <div className="pt-4 xl:pt-8">
                     <Link
