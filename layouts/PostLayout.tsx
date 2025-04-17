@@ -14,9 +14,19 @@ interface LayoutProps {
   children: ReactNode
   next?: { path: string; title: string }
   prev?: { path: string; title: string }
+  authorDetails: Array<{
+    name: string
+    slug: string
+    avatar?: string
+    occupation?: string
+    company?: string
+    email?: string
+  }>
 }
 
-export default function PostLayout({ content, next, prev, children }: LayoutProps) {
+import Image from '@/components/Image'
+
+export default function PostLayout({ content, next, prev, children, authorDetails }: LayoutProps) {
   const { path, slug, date, title, tags } = content
 
   return (
@@ -37,6 +47,37 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>
+              {authorDetails && authorDetails.length > 0 && (
+                <div className="flex justify-center gap-6 pt-4 pb-2">
+                  {authorDetails.map((author) => (
+                    <div key={author.slug} className="flex items-center space-x-2">
+                      {author.avatar && (
+                        <Link
+                          href={`/authors/${author.slug}`}
+                          aria-label={`Go to author page: ${author.name}`}
+                        >
+                          <Image
+                            src={author.avatar}
+                            alt={author.name}
+                            width={40}
+                            height={40}
+                            className="rounded-full border"
+                          />
+                        </Link>
+                      )}
+                      <div className="flex items-center">
+                        <Link
+                          href={`/authors/${author.slug}`}
+                          className="hover:text-primary-500 dark:hover:text-primary-400 font-semibold text-gray-900 dark:text-gray-100"
+                          aria-label={`Go to author page: ${author.name}`}
+                        >
+                          {author.name}
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 xl:divide-y-0 dark:divide-gray-700">
