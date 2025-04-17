@@ -35,7 +35,7 @@ export default function PostLayout({ content, next, prev, children, authorDetail
       <article>
         <div>
           <header>
-            <div className="space-y-1 border-b border-gray-200 pt-8 pb-10 dark:border-gray-700">
+            <div className="space-y-1 border-b border-gray-200 pt-8 pb-10 text-center dark:border-gray-700">
               <dl>
                 <div>
                   <dt className="sr-only">Published on</dt>
@@ -48,12 +48,13 @@ export default function PostLayout({ content, next, prev, children, authorDetail
                 <PageTitle>{title}</PageTitle>
               </div>
               {authorDetails && authorDetails.length > 0 && (
-                <div className="flex justify-start gap-3 pt-4 pb-0">
+                <div className="flex justify-center gap-3 pt-4 pb-0">
                   {authorDetails.map((author) => (
-                    <div key={author.slug} className="flex items-center space-x-2">
+                    <div key={author.slug} className="flex items-center justify-center gap-2">
                       <Link
                         href={`/authors/${author.slug}`}
                         aria-label={`Go to author page: ${author.name}`}
+                        className="shrink-0 text-gray-400 dark:text-gray-500"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +62,7 @@ export default function PostLayout({ content, next, prev, children, authorDetail
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="h-6 w-6 text-gray-400 dark:text-gray-500"
+                          className="h-6 w-6"
                           aria-hidden="true"
                           focusable="false"
                         >
@@ -72,15 +73,13 @@ export default function PostLayout({ content, next, prev, children, authorDetail
                           />
                         </svg>
                       </Link>
-                      <div className="flex items-center">
-                        <Link
-                          href={`/authors/${author.slug}`}
-                          className="hover:text-primary-500 dark:hover:text-primary-400 font-semibold text-gray-900 dark:text-gray-100"
-                          aria-label={`Go to author page: ${author.name}`}
-                        >
-                          {author.name}
-                        </Link>
-                      </div>
+                      <Link
+                        href={`/authors/${author.slug}`}
+                        className="hover:text-primary-500 dark:hover:text-primary-400 font-semibold break-words text-gray-900 dark:text-gray-100"
+                        aria-label={`Go to author page: ${author.name}`}
+                      >
+                        {author.name}
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -97,7 +96,7 @@ export default function PostLayout({ content, next, prev, children, authorDetail
                   </h2>
                   <div className="flex flex-wrap">
                     {tags.map((tag, index) => (
-                      <Tag key={tag} text={tag} isLast={index === tags.length - 1} />
+                      <Tag key={`${tag}-${index}`} text={tag} isLast={index === tags.length - 1} />
                     ))}
                   </div>
                 </div>
