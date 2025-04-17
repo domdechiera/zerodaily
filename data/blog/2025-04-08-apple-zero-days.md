@@ -81,11 +81,11 @@ The discovery and patching of these zero-day vulnerabilities highlight the impor
 
 ### Sources
 
-1. Apple Security Updates: [iOS 18.3.1 Security Content](https://support.apple.com/en-us/106332)
-2. Apple Security Updates: [macOS Ventura 13.4 Security Content](https://support.apple.com/en-us/106333)
-3. MITRE CVE Database: [CVE-2025-24200](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24200)
-4. MITRE CVE Database: [CVE-2025-24201](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24201)
-5. MITRE CVE Database: [CVE-2025-24085](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24085)
+1. [Apple Security Updates: iOS 18.3.1 Security Content](https://support.apple.com/en-us/106332)
+2. [Apple Security Updates: macOS Ventura 13.4 Security Content](https://support.apple.com/en-us/106333)
+3. [MITRE CVE Database: CVE-2025-24200](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24200)
+4. [MITRE CVE Database: CVE-2025-24201](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24201)
+5. [MITRE CVE Database: CVE-2025-24085](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24085)
 
 ### Related Articles
 
