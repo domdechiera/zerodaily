@@ -65,6 +65,7 @@ git:
     - ".yarn/"
     - "dist/"
     - "build/"
+  use_branches: true
 
 # Testing Configuration
 testing:
