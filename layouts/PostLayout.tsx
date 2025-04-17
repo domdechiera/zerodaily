@@ -35,7 +35,7 @@ export default function PostLayout({ content, next, prev, children, authorDetail
       <article>
         <div>
           <header>
-            <div className="space-y-1 border-b border-gray-200 pt-8 pb-10 dark:border-gray-700">
+            <div className="space-y-1 border-b border-gray-200 pt-8 pb-10 text-center dark:border-gray-700">
               <dl>
                 <div>
                   <dt className="sr-only">Published on</dt>
@@ -48,7 +48,7 @@ export default function PostLayout({ content, next, prev, children, authorDetail
                 <PageTitle>{title}</PageTitle>
               </div>
               {authorDetails && authorDetails.length > 0 && (
-                <div className="flex justify-start gap-3 pt-4 pb-0">
+                <div className="flex justify-center gap-3 pt-4 pb-0">
                   {authorDetails.map((author) => (
                     <div key={author.slug} className="flex items-center space-x-2">
                       <Link
