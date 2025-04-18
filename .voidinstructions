@@ -113,7 +113,7 @@ source_verification:
 related_content:
   - "Keep related articles static in markdown files"
   - "Organically include relevant articles that naturally complement the content"
-  - "Use descriptive anchor text for internal links"
+  - "Use exact article title for related article links"
   - "Verify all related article links before publication"
   - "Update related articles when content is significantly updated"
   - "Maintain a consistent format for related articles"
