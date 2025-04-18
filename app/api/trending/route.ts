@@ -9,20 +9,20 @@ interface AnalyticsData {
 // Fallback data for when Vercel analytics is not available
 const fallbackTrendingNews = [
   {
-    title: 'CVE Program Faces Funding Crisis: Critical Cybersecurity Infrastructure at Risk',
-    href: '/blog/2025-04-16-cve-program-funding-crisis',
+    title:
+      'Apple Patches Two Actively Exploited Zero-Days (CVE-2025-31200, CVE-2025-31201) – April 2025 Emergency Security Update',
+    href: '/blog/2025-04-16-apple-zero-day-emergency-patch',
     date: '2025-04-16',
   },
   {
-    title:
-      'Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know',
-    href: '/blog/2025-04-13-crushftp-vulnerability',
-    date: '2025-04-13',
+    title: '4chan Hacked: Major Data Breach Exposes Internal Data and Source Code',
+    href: '/blog/2025-04-16-4chan-hack',
+    date: '2025-04-16',
   },
   {
-    title: 'Apple Emergency Patches Released for Three Actively Exploited Zero-Day Vulnerabilities',
-    href: '/blog/2025-04-08-apple-zero-days',
-    date: '2025-04-08',
+    title: 'SentinelOne Fallout: Industry Response and Long-Term Risks',
+    href: '/blog/2025-04-17-sentinelone-fallout',
+    date: '2025-04-17',
   },
   {
     title: 'Critical Microsoft Zero-Day Vulnerability CVE-2025-29824: What You Need to Know',
