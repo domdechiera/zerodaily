@@ -1,5 +1,5 @@
 {
-  "cybersecurity": 8,
+  "cybersecurity": 9,
   "vulnerabilities": 5,
   "cyber-attacks": 4,
   "apple": 2,
@@ -43,5 +43,11 @@
   "ntlm": 1,
   "credential-theft": 1,
   "phishing": 1,
-  "active-exploitation": 1
+  "active-exploitation": 1,
+  "malware": 1,
+  "linux": 1,
+  "ddos": 1,
+  "botnet": 1,
+  "attack-vectors": 1,
+  "threat-intelligence": 1
 }
