@@ -1,7 +1,7 @@
 ---
 title: 'Apple Patches Two Actively Exploited Zero-Days (CVE-2025-31200, CVE-2025-31201) – April 2025 Emergency Security Update'
 date: '2025-04-16'
-authors: ['default']
+authors: ['zerodaily']
 tags: [apple, zero-day, emergency-patch, ios, ipad, macos, security-update]
 draft: false
 summary: 'Apple has released emergency security updates for iOS, iPadOS, macOS, tvOS, and visionOS, patching two zero-day vulnerabilities (CVE-2025-31200, CVE-2025-31201) exploited in targeted attacks.'
