@@ -44,13 +44,10 @@
   "credential-theft": 1,
   "phishing": 1,
   "active-exploitation": 1,
-  "xorddos": 1,
+  "malware": 1,
   "linux": 1,
   "ddos": 1,
   "botnet": 1,
-  "trojan": 1,
-  "c2": 1,
-  "ssh": 1,
-  "docker": 1,
+  "attack-vectors": 1,
   "threat-intelligence": 1
 }
