@@ -1,7 +1,7 @@
 ---
 title: '<Concise, Factual Headline>'
 date: '<YYYY-MM-DD>'
-authors: ['default']
+authors: ['zerodaily']
 tags: [<comma-separated, lowercase, hyphenated tags>]
 draft: false
 summary: '<1-2 sentence summary of the article, factual and to the point>'
