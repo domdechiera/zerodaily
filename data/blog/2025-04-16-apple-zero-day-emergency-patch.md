@@ -43,10 +43,10 @@ These updates cannot be downgraded once installed. Organizations should prioriti
 1. [Apple Security Advisory: iOS 18.4.1 and iPadOS 18.4.1](https://support.apple.com/en-us/122282)
 2. [NIST NVD: CVE-2025-31200](https://nvd.nist.gov/vuln/detail/CVE-2025-31200)
 3. [NIST NVD: CVE-2025-31201](https://nvd.nist.gov/vuln/detail/CVE-2025-31201)
-4. [CISA KEV Catalog](https://cisa.gov/known-exploited-vulnerabilities-catalog)
+4. [CISA KEV Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
 
 ### Related Articles
 
-- [Apple Patches Two Zero-Days in Early April 2025](2025-04-08-apple-zero-days.md)
-- [Microsoft Zero-Day Patched in April 2025](2025-04-08-microsoft-zero-day.md)
-- [CrushFTP Vulnerability: What You Need to Know](2025-04-13-crushftp-vulnerability.md)
+- [Apple Emergency Patches Released for Three Actively Exploited Zero-Day Vulnerabilities](/blog/2025-04-08-apple-zero-days)
+- [Critical Microsoft Zero-Day Vulnerability CVE-2025-29824: What You Need to Know](/blog/2025-04-08-microsoft-zero-day)
+- [Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know](/blog/2025-04-13-crushftp-vulnerability)
