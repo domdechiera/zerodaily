@@ -54,6 +54,6 @@ For more information, see CISA and NSA’s [Cloud Security Best Practices](https
 
 ### Related Articles
 
-- [SentinelOne Fallout: Lessons for Cloud Security Teams](/blog/2025-04-17-sentinelone-fallout)
-- [CVE Program Funding Crisis: What’s at Stake for Vulnerability Disclosure?](/blog/2025-04-16-cve-program-funding-crisis)
-- [4chan Hack: Data Breach Exposes Millions](/blog/2025-04-16-4chan-hack)
+- [SentinelOne Fallout: Industry Response and Long-Term Risks](/blog/2025-04-17-sentinelone-fallout)
+- [CVE Program Faces Funding Crisis: Critical Cybersecurity Infrastructure at Risk](/blog/2025-04-16-cve-program-funding-crisis)
+- [4chan Hacked: Major Data Breach Exposes Internal Data and Source Code](/blog/2025-04-16-4chan-hack)
