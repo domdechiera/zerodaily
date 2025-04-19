@@ -1,5 +1,5 @@
 {
-  "cybersecurity": 8,
+  "cybersecurity": 9,
   "vulnerabilities": 5,
   "cyber-attacks": 4,
   "apple": 2,
@@ -12,7 +12,7 @@
   "file-transfer": 1,
   "authentication-bypass": 1,
   "critical-vulnerability": 1,
-  "data-breach": 2,
+  "data-breach": 3,
   "4chan": 1,
   "source-code": 1,
   "leak": 2,
@@ -43,5 +43,7 @@
   "ntlm": 1,
   "credential-theft": 1,
   "phishing": 1,
-  "active-exploitation": 1
+  "active-exploitation": 1,
+  "occ": 1,
+  "financial-sector": 1
 }
