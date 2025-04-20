@@ -53,5 +53,11 @@
   "occ": 1,
   "financial-sector": 1,
   "authentication": 1,
-  "identity-management": 1
+  "identity-management": 1,
+  "artificial-intelligence": 1,
+  "fraud-detection": 1,
+  "online-scams": 1,
+  "fraud-prevention": 1,
+  "llama": 1,
+  "large-language-models": 1
 }
