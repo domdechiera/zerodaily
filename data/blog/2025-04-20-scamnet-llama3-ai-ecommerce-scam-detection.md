@@ -50,7 +50,7 @@ While AI-based detection systems like ScamNet show promise for the future, consu
 
 * **Check contact information**: Legitimate businesses provide clear contact information, including a physical address and phone number.
 
-* **Watch for poor grammar and design**: While sophisticated scams may appear professional, many fraudulent sites contain spelling errors, grammar mistakes, and low-quality images.
+* **Watch for poor grammar and design**: While sophisticated scams may appear professional, many fraudulent sites contain spelling errors, grammar mistakes, and low-quality images. However, this is becoming less evident as cybercriminals begin incorporating AI into their tactics.[^2]
 
 * **Report suspicious sites**: If you encounter a suspected fraudulent website, report it to relevant authorities such as the FTC, IC3, or your country's consumer protection agency.
 
