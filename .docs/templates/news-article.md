@@ -13,6 +13,8 @@ type: Blog
 
 <-Main article content starts here. Use clear, concise paragraphs.->
 
+NOTE: Currently experimenting with footnote source links within content flow.
+
 ### <-Section Heading->
 
 <-Supporting details, analysis, or narrative. Use H3 (###) for all section headings.->
