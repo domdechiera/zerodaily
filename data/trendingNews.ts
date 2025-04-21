@@ -9,14 +9,15 @@ export interface TrendingNewsItem {
 
 export const trendingNews: TrendingNewsItem[] = [
   {
+    title:
+      'Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know',
+    href: '/blog/2025-04-13-crushftp-vulnerability',
+    date: '2025-04-13',
+  },
+  {
     title: 'Widespread Microsoft Entra Lockouts Disrupt Organizations Globally – April 2025',
     href: '/blog/2025-04-20-microsoft-entra-mace-lockout',
     date: '2025-04-20',
-  },
-  {
-    title: 'SentinelOne Fallout: Industry Response and Long-Term Risks',
-    href: '/blog/2025-04-17-sentinelone-fallout',
-    date: '2025-04-17',
   },
   {
     title:
@@ -25,9 +26,8 @@ export const trendingNews: TrendingNewsItem[] = [
     date: '2025-04-18',
   },
   {
-    title:
-      'XORDDoS Trojan: 2023–2025 Global Linux DDoS Campaigns, Evolving Infrastructure, and U.S. Targeting',
-    href: '/blog/2025-04-18-xorddos-linux-ddos-malware-global-campaign',
-    date: '2025-04-18',
+    title: 'SentinelOne Fallout: Industry Response and Long-Term Risks',
+    href: '/blog/2025-04-17-sentinelone-fallout',
+    date: '2025-04-17',
   },
 ]
