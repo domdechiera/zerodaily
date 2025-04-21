@@ -43,8 +43,6 @@ The breach was enabled by the compromise of an overprivileged administrative acc
 
 - [XorDDoS Linux DDoS Malware Global Campaign](/blog/2025-04-18-xorddos-linux-ddos-malware-global-campaign)
 
-<!-- Sources -->
-
 [^1]: [BPInsights: April 19, 2025 – Bank Policy Institute](https://bpi.com/bpinsights-april-19-2025/)
 [^2]: [Hackers Spied on 100 Bank Regulators’ Emails for Over a Year – Bloomberg](https://www.bloomberg.com/news/articles/2025-04-08/hackers-spied-on-100-bank-regulators-emails-for-over-a-year?sref=9xX5rA0h)
 [^3]: [JPMorgan, BNY Limit Information Sharing With OCC After Hack – Bloomberg](https://www.bloomberg.com/news/articles/2025-04-14/jpmorgan-bny-limit-information-sharing-with-occ-after-hack?sref=9xX5rA0h)

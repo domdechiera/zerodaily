@@ -45,8 +45,6 @@ The April 9, 2025 presidential memorandum from the White House directs the revoc
 - [CVE Program Faces Funding Crisis: Critical Cybersecurity Infrastructure at Risk](/blog/2025-04-16-cve-program-funding-crisis)
 - [Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know](/blog/2025-04-13-crushftp-vulnerability)
 
-<!-- Sources -->
-
 [^1]: [White House: Addressing Risks from Chris Krebs and Government Censorship (April 9, 2025)](https://www.whitehouse.gov/presidential-actions/2025/04/addressing-risks-from-chris-krebs-and-government-censorship/)
 [^2]: [SentinelOne: Official Statement in Response to the April 9, 2025 Executive Order](https://www.sentinelone.com/blog/an-official-statement-in-response-to-the-april-9-2025-executive-order/)
 [^3]: [Cybersecurity industry falls silent as Trump turns ire on SentinelOne – Reuters](https://www.reuters.com/world/us/cybersecurity-industry-falls-silent-trump-turns-ire-sentinelone-2025-04-10/)

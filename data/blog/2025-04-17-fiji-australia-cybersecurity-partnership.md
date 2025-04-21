@@ -40,7 +40,5 @@ Both governments reiterated their commitment to building a secure and resilient 
 - [CVE Program Faces Funding Crisis: Critical Cybersecurity Infrastructure at Risk](/blog/2025-04-16-cve-program-funding-crisis)
 - [Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know](/blog/2025-04-13-crushftp-vulnerability)
 
-<!-- Sources -->
-
 [^1]: [Mai TV Fiji: Fiji and Australia Reaffirm Cybersecurity Partnership under Vuvale Framework (April 17, 2025)](https://maitvfiji.com/fiji-and-australia-reaffirm-cybersecurity-partnership-under-vuvale-framework/)
 [^2]: [Fiji Ministry of Foreign Affairs: Fiji and Australia to Strengthen Cyber Security and Defence Cooperation](https://www.foreignaffairs.gov.fj/fiji-and-australia-to-strengthen-cyber-security-and-defence-cooperation/)

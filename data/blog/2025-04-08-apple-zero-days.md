@@ -84,8 +84,6 @@ The discovery and patching of these zero-day vulnerabilities highlight the impor
 - [Critical Microsoft Zero-Day Vulnerability CVE-2025-29824](/blog/2025-04-08-microsoft-zero-day)
 - [CrushFTP Authentication Bypass Vulnerability CVE-2025-31161](/blog/2025-04-13-crushftp-vulnerability)
 
-<!-- Sources -->
-
 [^1]: [Apple Security Updates: iOS 18.3.1 Security Content](https://support.apple.com/en-us/106332)
 [^2]: [Apple Security Updates: macOS Ventura 13.4 Security Content](https://support.apple.com/en-us/106333)
 [^3]: [MITRE CVE Database: CVE-2025-24200](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24200)
