@@ -13,21 +13,17 @@ type: Blog
 
 <-Main article content starts here. Use clear, concise paragraphs.->
 
-NOTE: Currently experimenting with footnote source links within content flow.
+Inline footnotes (e.g., [^1]) should be utilized
 
 ### <-Section Heading->
 
 <-Supporting details, analysis, or narrative. Use H3 (###) for all section headings.->
-
-### Sources
-
-1. [<Source Title 1>](<URL>)
-2. [<Source Title 2>](<URL>)
-3. [<Source Title 3>](<URL>)
-<!-- Numbered list. Use only direct, relevant, and original sources. No generic homepages. -->
 
 ### Related Articles
 
 - [<Actual Title of Related Article 1>](<relative-link>)
 - [<Actual Title of Related Article 2>](<relative-link>)
 <!-- Bulleted list. Use actual or shortened article titles. Place at the very end of the article. -->
+
+<!-- Add footnnote sources -->
+[^1]: [Example citation title](https://example.com/citation-link)
