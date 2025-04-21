@@ -1,8 +1,8 @@
 ---
-title: "Widespread Microsoft Entra Lockouts Disrupt Organizations Globally – April 2025"
-date: "2025-04-20"
+title: 'Widespread Microsoft Entra Lockouts Disrupt Organizations Globally – April 2025'
+date: '2025-04-20'
 authors: ['zerodaily']
-tags: ["cybersecurity", "microsoft", "authentication", "incident-response", "cloud", "identity-management", "windows-security"]
+tags: ['microsoft', 'authentication', 'incident-response', 'cloud', 'windows']
 draft: false
 summary: "A silent rollout of Microsoft Entra's MACE Credential Revocation feature triggered mass account lockouts worldwide on April 20, 2025, impacting thousands of organizations and sparking debate over automation in identity security."
 type: Blog
