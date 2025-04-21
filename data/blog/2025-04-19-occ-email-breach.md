@@ -2,7 +2,7 @@
 title: 'OCC Email Breach Exposes Sensitive Bank Data in Multi-Year Cyberattack (May 2023–2025)'
 date: '2025-04-19'
 authors: ['zerodaily']
-tags: [occ, data-breach, cybersecurity, financial-sector]
+tags: ['data-breach', 'financial-sector', 'incident-response']
 draft: false
 summary: 'A multi-year cyberattack on the Office of the Comptroller of the Currency compromised over 150,000 emails containing sensitive bank data. The breach, undetected for 18 months, has triggered industry fallout and OCC organizational changes.'
 type: Blog

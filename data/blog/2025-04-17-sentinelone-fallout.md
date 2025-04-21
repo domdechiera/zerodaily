@@ -1,7 +1,7 @@
 ---
 title: "SentinelOne Fallout: Industry Response and Long-Term Risks"
 date: "2025-04-17"
-tags: ['cybersecurity', 'industry-news', 'sentinelone', 'cisa', 'politicization']
+tags: ['industry-news', 'cisa', 'policy']
 draft: false
 summary: "President Trump's revocation of SentinelOne executives' security clearances over the hiring of former CISA chief Chris Krebs has sent shockwaves through the cybersecurity industry, with major vendors remaining silent amid fears of political retaliation."
 authors: ['zerodaily']

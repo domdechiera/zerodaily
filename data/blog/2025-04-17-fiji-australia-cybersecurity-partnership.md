@@ -1,7 +1,7 @@
 ---
 title: 'Fiji and Australia Reaffirm Cybersecurity Partnership under Vuvale Framework'
 date: '2025-04-17'
-tags: [cybersecurity, australia, fiji, pacific, regional-cooperation, cert, vuvale-framework]
+tags: ['asia-pacific', 'policy']
 draft: false
 summary: 'Fiji and Australia have reaffirmed their cybersecurity partnership under the Vuvale Framework, marking one year since the signing of their cyber collaboration MOU and announcing new steps to strengthen Fiji’s digital defenses.'
 type: Blog
