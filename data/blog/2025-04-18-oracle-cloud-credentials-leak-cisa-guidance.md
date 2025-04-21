@@ -30,7 +30,7 @@ CISA warned that compromised credentials (including usernames, passwords, tokens
 2. **Audit source code, infrastructure-as-code, automation scripts, and configuration files** for hardcoded or embedded credentials. Replace these with secure authentication methods supported by centralized secret management.
 3. **Monitor authentication logs** for anomalous activity, particularly involving privileged, service, or federated accounts. Assess whether API keys or shared accounts may be linked to affected identities.
 4. **Enforce phishing-resistant multi-factor authentication (MFA)** for all user and administrator accounts wherever feasible.
-5. **Report incidents or suspicious activity** to CISA’s 24/7 Operations Center at Report@cisa.gov or (888) 282-0870.
+5. **Report incidents or suspicious activity** to CISA’s 24/7 Operations Center
 
 #### For Individual Users
 
@@ -50,8 +50,6 @@ For more information, see CISA and NSA’s [Cloud Security Best Practices](https
 - [SentinelOne Fallout: Industry Response and Long-Term Risks](/blog/2025-04-17-sentinelone-fallout)
 - [CVE Program Faces Funding Crisis: Critical Cybersecurity Infrastructure at Risk](/blog/2025-04-16-cve-program-funding-crisis)
 - [4chan Hacked: Major Data Breach Exposes Internal Data and Source Code](/blog/2025-04-16-4chan-hack)
-
-<!-- Sources -->
 
 [^1]: [CISA Releases Guidance on Credential Risks Associated with Potential Legacy Oracle Cloud Compromise](https://www.cisa.gov/news-events/alerts/2025/04/16/cisa-releases-guidance-credential-risks-associated-potential-legacy-oracle-cloud-compromise)
 [^2]: [CISA releases guidance following reported legacy Oracle cloud breach – SDAHO](https://sdaho.org/2025/04/17/cisa-releases-guidance-following-reported-legacy-oracle-cloud-breach/)

@@ -80,7 +80,5 @@ The discovery and patching of CVE-2025-29824 underscores the importance of maint
 - [Apple Releases Emergency Patches for Three Actively Exploited Zero-Day Vulnerabilities](/blog/2025-04-08-apple-zero-days)
 - [Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161](/blog/2025-04-13-crushftp-vulnerability)
 
-<!-- Sources -->
-
 [^1]: [Microsoft Security Update: April 2025 Security Update](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29824)
 [^2]: [MITRE CVE Database: CVE-2025-29824](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-29824)

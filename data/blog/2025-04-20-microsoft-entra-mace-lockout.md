@@ -39,7 +39,5 @@ Microsoft Entra ID (formerly Azure Active Directory) introduced MACE Credential 
 - [Apple Patches Two Actively Exploited Zero-Days (CVE-2025-31200, CVE-2025-31201) – April 2025 Emergency Security Update](/blog/2025-04-16-apple-zero-day-emergency-patch)
 - [Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know](/blog/2025-04-13-crushftp-vulnerability)
 
-<!-- Sources -->
-
 [^1]: [Mass Account Lockouts Hit Organizations Due to Microsoft Entra’s MACE Rollout Error](https://undercodenews.com/mass-account-lockouts-hit-organizations-due-to-microsoft-entras-mace-rollout-error/)
 [^2]: [Microsoft Entra releases and announcements](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new)

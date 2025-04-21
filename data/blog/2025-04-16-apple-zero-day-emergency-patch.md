@@ -44,8 +44,6 @@ These updates cannot be downgraded once installed.[^1] Organizations should prio
 - [Critical Microsoft Zero-Day Vulnerability CVE-2025-29824: What You Need to Know](/blog/2025-04-08-microsoft-zero-day)
 - [Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know](/blog/2025-04-13-crushftp-vulnerability)
 
-<!-- Sources -->
-
 [^1]: [Apple Security Advisory: iOS 18.4.1 and iPadOS 18.4.1](https://support.apple.com/en-us/122282)
 [^2]: [NIST NVD: CVE-2025-31200](https://nvd.nist.gov/vuln/detail/CVE-2025-31200)
 [^3]: [NIST NVD: CVE-2025-31201](https://nvd.nist.gov/vuln/detail/CVE-2025-31201)
