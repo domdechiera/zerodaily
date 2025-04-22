@@ -1,3 +1,4 @@
+import { SVGProps } from 'react'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Link from './Link'
@@ -16,11 +17,19 @@ const Header = () => {
   }
 
   // Custom HeaderSocialIcon component with muted colors
-  const HeaderSocialIcon = ({ href, icon }) => {
+  const HeaderSocialIcon = ({
+    href,
+    icon,
+    rel = 'noopener noreferrer',
+  }: {
+    href: string | undefined
+    icon: (svgProps: SVGProps<SVGSVGElement>) => JSX.Element
+    rel?: string
+  }) => {
     if (!href) return null
     const Icon = icon
     return (
-      <a className="text-xs transition" target="_blank" rel="noopener noreferrer" href={href}>
+      <a className="text-xs transition" target="_blank" rel={rel} href={href}>
         <Icon className="h-3 w-3 fill-current text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-400" />
       </a>
     )
@@ -48,7 +57,11 @@ const Header = () => {
             <HeaderSocialIcon href={siteMetadata.linkedin} icon={Linkedin} />
             <HeaderSocialIcon href={siteMetadata.x} icon={X} />
             <HeaderSocialIcon href={siteMetadata.bluesky} icon={Bluesky} />
-            <HeaderSocialIcon href={siteMetadata.mastodon} icon={Mastodon} />
+            <HeaderSocialIcon
+              href={siteMetadata.mastodon}
+              icon={Mastodon}
+              rel="me noopener noreferrer"
+            />
           </div>
         </div>
       </div>
