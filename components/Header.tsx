@@ -4,7 +4,7 @@ import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
-import { Facebook, Linkedin, Bluesky, X } from '@/components/social-icons/icons'
+import { Facebook, Linkedin, Bluesky, X, Mastodon } from '@/components/social-icons/icons'
 
 const Header = () => {
   const topHeaderClass =
@@ -48,6 +48,7 @@ const Header = () => {
             <HeaderSocialIcon href={siteMetadata.linkedin} icon={Linkedin} />
             <HeaderSocialIcon href={siteMetadata.x} icon={X} />
             <HeaderSocialIcon href={siteMetadata.bluesky} icon={Bluesky} />
+            <HeaderSocialIcon href={siteMetadata.mastodon} icon={Mastodon} />
           </div>
         </div>
       </div>

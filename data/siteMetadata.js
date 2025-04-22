@@ -10,7 +10,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/zerodailyme/zerodaily.me',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/social-banner.png`,
-  mastodon: 'https://mastodon.social/@zerodailyme',
+  mastodon: 'https://infosec.exchange/@zerodaily',
   email: 'contact@zerodaily.me',
   github: 'https://github.com/zerodailyme',
   x: 'https://x.com/zerodailyme',
