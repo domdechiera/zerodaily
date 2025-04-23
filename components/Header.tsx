@@ -109,20 +109,22 @@ const Header = () => {
 
           {/* Navigation row - fixed border width */}
           <nav className="hidden border-t border-gray-100 pt-4 md:block dark:border-gray-900">
-            <div className="mb-3 flex flex-wrap justify-center space-x-3 text-sm md:mb-5 md:space-x-8 md:text-base dark:border-gray-700">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="hover:text-primary-500 dark:hover:text-primary-400 my-1 font-medium text-gray-900 dark:text-gray-100"
-                >
-                  {link.title}
-                </Link>
-              ))}
-            </div>
-            <div className="flex items-center space-x-4">
-              <ThemeSwitch />
-              <SearchButton />
+            <div className="flex items-center justify-between">
+              <div className="no-scrollbar flex overflow-x-auto">
+                {headerNavLinks.map((link) => (
+                  <Link
+                    key={link.title}
+                    href={link.href}
+                    className="hover:text-primary-500 dark:hover:text-primary-400 mr-8 font-medium whitespace-nowrap text-gray-900 dark:text-gray-100"
+                  >
+                    {link.title}
+                  </Link>
+                ))}
+              </div>
+              <div className="flex items-center space-x-4">
+                <ThemeSwitch />
+                <SearchButton />
+              </div>
             </div>
           </nav>
         </div>
