@@ -1,4 +1,4 @@
-import { SVGProps } from 'react'
+import { SVGProps, CSSProperties } from 'react'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Link from './Link'
@@ -21,29 +21,23 @@ const Header = () => {
     href,
     icon,
     rel = 'noopener noreferrer',
+    style,
   }: {
     href: string | undefined
     icon: (svgProps: SVGProps<SVGSVGElement>) => JSX.Element
     rel?: string
+    style?: CSSProperties
   }) => {
     if (!href) return null
     const Icon = icon
     return (
-      <a className="text-xs transition" target="_blank" rel={rel} href={href}>
+      <a className="text-xs transition" target="_blank" rel={rel} href={href} style={style}>
         <Icon className="h-3 w-3 fill-current text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-400" />
       </a>
     )
   }
 
-  // Main navigation categories based on TheHackerNews style
-  const mainNavLinks = [
-    { href: '/', title: 'Home' },
-    { href: '/tags/data-breach', title: 'Data Breaches' },
-    { href: '/tags/cyber-attacks', title: 'Cyber Attacks' },
-    { href: '/tags/vulnerabilities', title: 'Vulnerabilities' },
-    { href: '/resources', title: 'Resources' },
-    { href: '/about', title: 'About' },
-  ]
+  // Using headerNavLinks imported from data files to maintain compatibility with starter template
 
   return (
     <>
@@ -61,6 +55,12 @@ const Header = () => {
               href={siteMetadata.mastodon}
               icon={Mastodon}
               rel="me noopener noreferrer"
+            />
+            <HeaderSocialIcon
+              href={siteMetadata.mastodon2}
+              icon={Mastodon}
+              rel="me noopener noreferrer"
+              style={{ display: 'none' }}
             />
           </div>
         </div>
@@ -109,22 +109,20 @@ const Header = () => {
 
           {/* Navigation row - fixed border width */}
           <nav className="hidden border-t border-gray-100 pt-4 md:block dark:border-gray-900">
-            <div className="flex items-center justify-between">
-              <div className="no-scrollbar flex overflow-x-auto">
-                {mainNavLinks.map((link) => (
-                  <Link
-                    key={link.title}
-                    href={link.href}
-                    className="hover:text-primary-600 dark:hover:text-primary-400 mr-8 font-medium whitespace-nowrap text-gray-900 dark:text-gray-100"
-                  >
-                    {link.title}
-                  </Link>
-                ))}
-              </div>
-              <div className="flex items-center space-x-4">
-                <ThemeSwitch />
-                <SearchButton />
-              </div>
+            <div className="mb-3 flex flex-wrap justify-center space-x-3 text-sm md:mb-5 md:space-x-8 md:text-base dark:border-gray-700">
+              {headerNavLinks.map((link) => (
+                <Link
+                  key={link.title}
+                  href={link.href}
+                  className="hover:text-primary-500 dark:hover:text-primary-400 my-1 font-medium text-gray-900 dark:text-gray-100"
+                >
+                  {link.title}
+                </Link>
+              ))}
+            </div>
+            <div className="flex items-center space-x-4">
+              <ThemeSwitch />
+              <SearchButton />
             </div>
           </nav>
         </div>
