@@ -15,11 +15,11 @@ type: Blog
 
 Inline footnotes (e.g., [^1]) should be utilized
 
-### <-Section Heading->
+## <-Section Heading->
 
-<-Supporting details, analysis, or narrative. Use H3 (###) for all section headings.->
+<-Supporting details, analysis, or narrative. Use H2 (##) for all section headings and H3 (###) for sub-headings. End the article with a `## Final Thoughts` section ->
 
-### Related Articles
+## Related Articles
 
 - [<Actual Title of Related Article 1>](<relative-link>)
 - [<Actual Title of Related Article 2>](<relative-link>)
