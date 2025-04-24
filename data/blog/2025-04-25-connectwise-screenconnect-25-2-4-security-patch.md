@@ -1,6 +1,6 @@
 ---
 title: 'ConnectWise Releases ScreenConnect 25.2.4 Security Patch for Critical ViewState Vulnerability (2025-04-25)'
-date: '2025-04-24'
+date: '2025-04-25'
 authors: ['zerodaily']
 tags: ['vulnerability', 'exploit', 'incident-response', 'authentication']
 draft: false
