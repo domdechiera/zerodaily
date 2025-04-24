@@ -50,3 +50,7 @@ yarn-error.log*
 # MacOS
 .DS_Store
 ._*
+
+# Workspaces
+zerodaily.code-workspace
+zerodaily2.code-workspace
