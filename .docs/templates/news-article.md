@@ -2,7 +2,7 @@
 title: '<Concise, Factual Headline>'
 date: '<YYYY-MM-DD>'
 authors: ['zerodaily']
-tags: [<comma-separated, lowercase, hyphenated tags>]
+tags: ['comma-separated', 'lowercase', 'hyphenated-tags'>]
 draft: false
 summary: '<1-2 sentence summary of the article, factual and to the point>'
 type: Blog
@@ -21,9 +21,9 @@ Inline footnotes (e.g., [^1]) should be utilized
 
 ## Related Articles
 
-- [<Actual Title of Related Article 1>](<relative-link>)
-- [<Actual Title of Related Article 2>](<relative-link>)
+- [<Actual Title of Related Article 1>](</blog/filename-without-extension>)
+- [<Actual Title of Related Article 2>](</blog/filename-without-extension>)
 <!-- Bulleted list. Use actual or shortened article titles. Place at the very end of the article. -->
 
-<!-- Add footnnote sources -->
+<!-- Add footnnote sources - dont add this comment -->
 [^1]: [Example citation title](https://example.com/citation-link)
