@@ -54,3 +54,6 @@ yarn-error.log*
 # Workspaces
 zerodaily.code-workspace
 zerodaily2.code-workspace
+
+# Rules
+.rules
