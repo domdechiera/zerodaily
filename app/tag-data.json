@@ -1,7 +1,7 @@
 {
   "apple": 2,
   "zero-day": 4,
-  "vulnerability": 10,
+  "vulnerability": 11,
   "exploit": 11,
   "cisa": 9,
   "cyber-attack": 12,
@@ -21,14 +21,14 @@
   "botnet": 2,
   "threat-intelligence": 1,
   "financial-sector": 2,
-  "authentication": 4,
+  "authentication": 5,
   "artificial-intelligence": 3,
   "fraud": 2,
   "scam": 1,
   "training": 1,
   "research": 2,
   "ransomware": 1,
-  "phishing": 2,
+  "phishing": 3,
   "threatintelligence": 1,
   "google": 1
 }
