@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "incremental": true,
-    "target": "ES6",
+    "target": "ES2015",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -36,11 +36,13 @@
     "**/*.js",
     "**/*.mjs",
     "**/*.ts",
+    "**/*.mts",
     "**/*.tsx",
     "**/*.json",
     ".contentlayer/generated",
     ".contentlayer/generated/**/*.json",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "scripts/**/*.mts"
   ],
   "exclude": ["node_modules"]
 }
