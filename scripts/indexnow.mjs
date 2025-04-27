@@ -1,3 +1,8 @@
+// Securely load environment variables from .env
+import 'dotenv/config'
+
+console.log('ℹ️ IndexNow: Script started')
+
 /**
  * IndexNow Submission Script
  *
@@ -11,173 +16,119 @@
  * - Handles errors gracefully
  */
 
-// Define disallowed paths directly to avoid TypeScript import issues
-const robotsDisallow = ['/tags/', '/static/', '/scripts/', '/projects/']
 import fs from 'fs'
 import path from 'path'
-import { createRequire } from 'module'
-import { fileURLToPath } from 'url'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-
-// Dynamic import for utils/indexnow module
-async function importIndexNow() {
-  try {
-    const require = createRequire(import.meta.url)
-    const indexNowPath = '../utils/indexnow.js'
-    return import(indexNowPath)
-  } catch (error) {
-    console.error('❌ Failed to import IndexNow utility:', error)
-    throw error
-  }
-}
+import fetch from 'node-fetch'
 
 const MAX_URLS_PER_BATCH = 10000 // IndexNow limit
 
 /**
- * Check if a URL should be excluded based on robots.txt disallow rules
- * @param {string} url URL to check
- * @returns {boolean} True if the URL should be excluded
+ * Submits URLs to IndexNow endpoint
+ * @param {string[]} urls - Array of URLs to submit
  */
-function shouldExcludeUrl(url) {
-  const urlPath = new URL(url).pathname
-  // Check if the URL matches any disallowed paths
-  return robotsDisallow.some((disallowPattern) => {
-    // If it's a directory pattern ending with '/', check if the URL starts with this path
-    if (disallowPattern.endsWith('/')) {
-      return urlPath.startsWith(disallowPattern)
-    }
-    // Otherwise, exact match
-    return urlPath === disallowPattern
+async function submitToIndexNow(urls) {
+  const indexNowKey = process.env.INDEXNOW_KEY
+  const siteUrl = process.env.SITE_URL || 'https://www.zerodaily.me'
+  const INDEXNOW_ENDPOINT = 'https://www.bing.com/indexnow'
+  if (!indexNowKey) {
+    throw new Error('INDEXNOW_KEY is not set in environment variables.')
+  }
+  if (!Array.isArray(urls) || urls.length === 0) {
+    throw new Error('No valid URLs to submit')
+  }
+  const payload = {
+    host: new URL(siteUrl).host,
+    key: indexNowKey,
+    keyLocation: `${siteUrl}/${indexNowKey}.txt`,
+    urlList: urls,
+  }
+  const res = await fetch(INDEXNOW_ENDPOINT, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
   })
+  if (!res.ok) {
+    const text = await res.text()
+    throw new Error(`IndexNow submission failed: ${res.status} ${text}`)
+  }
+  console.log(`✅ IndexNow: Successfully submitted ${urls.length} URLs to IndexNow`)
 }
 
 /**
- * Collect all public URLs from the site
- * @returns {Promise<string[]>} Array of absolute URLs that aren't in the robots disallow list
+ * Load URLs and lastModified from indexnow-urls.json
+ * @returns {Array<{url: string, lastModified: string}>}
  */
-async function collectUrls() {
-  const urls = []
-  const siteUrl = 'https://www.zerodaily.me' // Read from environment or config if needed
-
-  // Try multiple locations for sitemap.xml
-  const possibleSitemapPaths = [
-    path.join(process.cwd(), 'public', 'sitemap.xml'),
-    path.join(process.cwd(), '..', 'public', 'sitemap.xml'),
-    path.join(process.cwd(), '..', '.next', 'server', 'app', 'sitemap.xml', 'index.body'),
-    path.join(process.cwd(), '.next', 'server', 'app', 'sitemap.xml', 'index.body'),
-  ]
-
-  // Try to find and read the sitemap
-  let sitemap = null
-  let foundPath = null
-
-  for (const sitemapPath of possibleSitemapPaths) {
-    if (fs.existsSync(sitemapPath)) {
-      try {
-        sitemap = fs.readFileSync(sitemapPath, 'utf-8')
-        foundPath = sitemapPath
-        console.log(`🌐 IndexNow: Found sitemap at ${sitemapPath}`)
-        break
-      } catch (e) {
-        console.log(`⚠️ IndexNow: Could not read ${sitemapPath}: ${e.message}`)
-      }
-    }
+function loadIndexNowUrls() {
+  const filePath = path.join(process.cwd(), 'data', 'indexnow-urls.json')
+  if (!fs.existsSync(filePath)) {
+    throw new Error('indexnow-urls.json not found. Run generate-indexnow-urls.mjs first.')
   }
-
-  // If we found a sitemap, extract URLs
-  if (sitemap) {
-    console.log('🌐 IndexNow: Reading URLs from sitemap...')
-    const sitemapUrls =
-      sitemap.match(/<loc>(.*?)<\/loc>/g)?.map((loc) => loc.replace(/<\/?loc>/g, '')) || []
-
-    // Only include URLs that aren't in the robots disallow list
-    sitemapUrls.filter((url) => !shouldExcludeUrl(url)).forEach((url) => urls.push(url))
-
-    console.log(
-      `📊 IndexNow: Found ${sitemapUrls.length} total URLs, ${urls.length} allowed for submission`
-    )
-  } else {
-    // Fallback: Add core URLs manually
-    console.log('⚠️ IndexNow: No sitemap found. Using fallback URL list.')
-
-    // Add homepage and core sections
-    urls.push(siteUrl)
-    urls.push(`${siteUrl}/blog`)
-    urls.push(`${siteUrl}/resources`)
-    urls.push(`${siteUrl}/about`)
-
-    console.log(`📊 IndexNow: Using ${urls.length} fallback URLs`)
-  }
-
-  return [...new Set(urls)] // Remove duplicates
+  return JSON.parse(fs.readFileSync(filePath, 'utf-8'))
 }
 
 /**
- * Submit all URLs to IndexNow
+ * Load previous submission state from indexnow-submissions.json
+ * @returns {Record<string, string>} url -> lastModified
  */
-export async function submitUrlsToIndexNow() {
+function loadSubmissionState() {
+  const filePath = path.join(process.cwd(), 'data', 'indexnow-submissions.json')
+  if (!fs.existsSync(filePath)) return {}
+  return JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+}
+
+/**
+ * Save submission state to indexnow-submissions.json
+ */
+function saveSubmissionState(state) {
+  const filePath = path.join(process.cwd(), 'data', 'indexnow-submissions.json')
+  fs.writeFileSync(filePath, JSON.stringify(state, null, 2))
+}
+
+/**
+ * Main: submit new/updated URLs to IndexNow and update state
+ */
+export default async function submitUrlsToIndexNow() {
   try {
-    console.log('🔍 IndexNow: Collecting URLs...')
-    const urls = await collectUrls()
-
-    if (!urls.length) {
-      console.warn('⚠️ IndexNow: No URLs found to submit')
+    if (!process.env.INDEXNOW_KEY) {
+      console.error('❌ INDEXNOW_KEY is missing from environment. Please set it in your .env file.')
       return
     }
-
-    console.log(
-      `📋 IndexNow: Found ${urls.length} URLs to submit (after filtering disallowed paths)`
-    )
-
-    // Check if IndexNow key is configured
-    const indexNowKey = process.env.INDEXNOW_KEY
-    if (!indexNowKey) {
-      console.error(
-        '❌ IndexNow: Missing INDEXNOW_KEY environment variable. URLs will not be submitted.'
-      )
+    let urls
+    try {
+      urls = loadIndexNowUrls()
+    } catch (e) {
+      console.warn(`⚠️ IndexNow: ${e.message}`)
       return
     }
-
-    // Check if verification file exists
-    const verificationFile = path.join(process.cwd(), 'public', `${indexNowKey}.txt`)
-    if (!fs.existsSync(verificationFile)) {
-      console.error(
-        `❌ IndexNow: Verification file not found at public/${indexNowKey}.txt. URLs will not be submitted.`
-      )
+    const prevState = loadSubmissionState()
+    const newOrUpdated = urls.filter(({ url, lastModified }) => {
+      return !prevState[url] || prevState[url] !== lastModified
+    })
+    if (newOrUpdated.length === 0) {
+      console.log('ℹ️ IndexNow: No new or updated URLs to submit.')
       return
     }
-
-    // Import the indexnow utility
-    const { submitToIndexNow, submitUrlToIndexNow } = await importIndexNow()
-
-    // Process URLs in batches
-    if (urls.length === 1) {
-      // Single URL submission
-      console.log(`🌐 IndexNow: Submitting URL: ${urls[0]}`)
-      await submitUrlToIndexNow(urls[0])
-      console.log('✅ IndexNow: URL successfully submitted')
-    } else {
-      // Process in batches to respect IndexNow limits
-      for (let i = 0; i < urls.length; i += MAX_URLS_PER_BATCH) {
-        const batch = urls.slice(i, i + MAX_URLS_PER_BATCH)
-        console.log(`🌐 IndexNow: Submitting batch of ${batch.length} URLs...`)
-        await submitToIndexNow(batch)
-        console.log(
-          `✅ IndexNow: Successfully submitted batch ${Math.floor(i / MAX_URLS_PER_BATCH) + 1}`
-        )
-      }
+    console.log(`📋 IndexNow: Submitting ${newOrUpdated.length} new/updated URLs to IndexNow...`)
+    // Submit in batches
+    for (let i = 0; i < newOrUpdated.length; i += MAX_URLS_PER_BATCH) {
+      const batch = newOrUpdated.slice(i, i + MAX_URLS_PER_BATCH).map((u) => u.url)
+      await submitToIndexNow(batch)
     }
-
-    console.log(
-      `✅ IndexNow: Successfully submitted ${urls.length} URLs to IndexNow (excluding robots.txt disallowed paths)`
-    )
-  } catch (error) {
-    console.error('❌ IndexNow submission error:', error)
-    // Don't fail the build for IndexNow errors
+    // Update state
+    const updatedState = { ...prevState }
+    for (const { url, lastModified } of newOrUpdated) {
+      updatedState[url] = lastModified
+    }
+    saveSubmissionState(updatedState)
+    console.log('✅ IndexNow: Submission state updated.')
+  } catch (err) {
+    console.error('❌ IndexNow: Uncaught error during submission:', err)
+  } finally {
+    console.log('ℹ️ IndexNow: Script finished')
   }
 }
 
-// Allow use as ESM module
-export default submitUrlsToIndexNow
+// If run directly, execute (for CLI and build usage)
+if (import.meta.url === `file://${process.argv[1]}`) {
+  submitUrlsToIndexNow()
+}

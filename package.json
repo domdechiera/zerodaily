@@ -5,11 +5,15 @@
   "scripts": {
     "start": "next dev",
     "dev": "cross-env INIT_CWD=$PWD next dev",
-    "build": "cross-env INIT_CWD=$PWD next build && cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/postbuild.mjs",
+    "generate-indexnow-urls": "node scripts/generate-indexnow-urls.mjs",
+    "indexnow": "node scripts/indexnow.mjs",
+    "postbuild": "yarn generate-indexnow-urls && yarn indexnow",
+    "build": "cross-env INIT_CWD=$PWD next build && yarn build:scripts && yarn postbuild",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build:scripts": "tsc --project tsconfig.scripts.json"
   },
   "dependencies": {
     "@headlessui/react": "2.2.0",
