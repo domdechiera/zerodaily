@@ -2,7 +2,7 @@
   "apple": 2,
   "zero-day": 6,
   "vulnerability": 14,
-  "exploit": 15,
+  "exploit": 16,
   "cisa": 9,
   "cyber-attack": 13,
   "microsoft": 6,
@@ -16,10 +16,10 @@
   "asia-pacific": 1,
   "oracle": 1,
   "cloud": 5,
-  "malware": 3,
+  "malware": 4,
   "linux": 1,
   "botnet": 2,
-  "threat-intelligence": 1,
+  "threat-intelligence": 2,
   "financial-sector": 2,
   "authentication": 5,
   "artificial-intelligence": 3,
@@ -28,7 +28,9 @@
   "training": 1,
   "research": 2,
   "ransomware": 2,
-  "phishing": 3,
+  "phishing": 4,
   "threatintelligence": 1,
-  "google": 1
+  "google": 1,
+  "north-korea": 1,
+  "cryptocurrency": 1
 }
