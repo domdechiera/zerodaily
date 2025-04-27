@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["data/siteMetadata.ts", "data/siteMetadata.js"],
+  "compilerOptions": {
+    "outDir": "./dist-scripts",
+    "module": "ESNext",
+    "target": "ES2020",
+
+    "esModuleInterop": true,
+    "moduleResolution": "Node"
+  }
+}
