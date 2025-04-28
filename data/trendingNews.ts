@@ -16,19 +16,20 @@ export const trendingNews: TrendingNewsItem[] = [
   },
   {
     title:
+      'ConnectWise Releases ScreenConnect 25.2.4 Security Patch for Critical ViewState Vulnerability (2025-04-25)',
+    href: 'https://www.zerodaily.me/blog/2025-04-25-connectwise-screenconnect-25-2-4-security-patch',
+    date: '2025-04-25',
+  },
+  {
+    title:
       'Critical CrushFTP Authentication Bypass Vulnerability CVE-2025-31161: What You Need to Know',
     href: '/blog/2025-04-13-crushftp-vulnerability',
     date: '2025-04-13',
   },
   {
     title:
-      'ConnectWise Releases ScreenConnect 25.2.4 Security Patch for Critical ViewState Vulnerability (2025-04-25)',
-    href: 'https://www.zerodaily.me/blog/2025-04-25-connectwise-screenconnect-25-2-4-security-patch',
-    date: '2025-04-25',
-  },
-  {
-    title: 'Widespread Microsoft Entra Lockouts Disrupt Organizations Globally – April 2025',
-    href: 'https://www.zerodaily.me/blog/2025-04-20-microsoft-entra-mace-lockout',
-    date: '2025-04-20',
+      'Microsoft Defender XDR False Positive Exposes 1,700+ Sensitive Documents in Public Data Leak',
+    href: 'https://www.zerodaily.me/blog/2025-04-26-microsoft-defender-xdr-false-positive-sensitive-documents-leak',
+    date: '2025-04-26',
   },
 ]
