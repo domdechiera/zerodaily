@@ -130,5 +130,9 @@
   {
     "url": "https://www.zerodaily.me/blog/2025-04-27-windows-inetpub-security-fix-abuse",
     "lastModified": "2025-04-27T00:00:00.000Z"
+  },
+  {
+    "url": "https://www.zerodaily.me/blog/2025-04-28-kali-linux-archive-signing-key-fix-apt-update-failing",
+    "lastModified": "2025-04-28T00:00:00.000Z"
   }
 ]
