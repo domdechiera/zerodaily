@@ -2,7 +2,7 @@
 title: 'Vibe Coding with LLMs: Security Flaws and Real-World Risks Revealed'
 date: '2025-04-25'
 authors: ['zerodaily']
-tags: ['artificial-intelligence', 'vulnerability', 'industry-news', 'research']
+tags: ['industry-news', 'research']
 draft: false
 summary: 'Vibe coding—using LLMs to generate code from prompts—boosts productivity but introduces widespread security flaws. Experts warn of SQL injection, leaked secrets, and prompt injection risks.'
 type: Blog

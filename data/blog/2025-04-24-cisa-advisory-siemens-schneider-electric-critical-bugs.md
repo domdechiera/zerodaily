@@ -2,7 +2,7 @@
 title: 'CISA Advisory: Critical Bugs in Siemens and Schneider Electric Industrial Gear (2025-04-24)'
 date: '2025-04-24'
 authors: ['zerodaily']
-tags: ['vulnerability', 'cisa', 'industry-news', 'exploit', 'incident-response']
+tags: ['vulnerability', 'industry-news']
 draft: false
 summary: 'CISA has issued advisories for critical vulnerabilities affecting Siemens TeleControl Server Basic and Schneider Electric Wiser Home Controller, exposing critical infrastructure to denial-of-service and credential disclosure risks.'
 type: Blog

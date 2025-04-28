@@ -2,7 +2,7 @@
 title: 'Phishers Abuse Google Sites and DKIM Replay to Send Legitimately Signed Emails and Harvest Credentials'
 date: '2025-04-22'
 authors: ['zerodaily']
-tags: ['phishing', 'exploit', 'authentication', 'google', 'cloud', 'industry-news', 'cyber-attack']
+tags: ['phishing', 'exploit']
 draft: false
 summary: 'Campaign abuses Google Sites and DKIM replay to bypass email security and steal Google account credentials.'
 type: Blog

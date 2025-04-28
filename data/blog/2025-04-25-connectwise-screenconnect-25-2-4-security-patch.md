@@ -2,7 +2,7 @@
 title: 'ConnectWise Releases ScreenConnect 25.2.4 Security Patch for Critical ViewState Vulnerability (2025-04-25)'
 date: '2025-04-25'
 authors: ['zerodaily']
-tags: ['vulnerability', 'exploit', 'incident-response', 'authentication']
+tags: ['vulnerability', 'industry-news']
 draft: false
 summary: 'ConnectWise has released ScreenConnect 25.2.4 to address a high-severity ViewState code injection vulnerability (CWE-287, CVSS 8.8) affecting versions 25.2.3 and earlier. All on-premises users are urged to patch immediately.'
 type: Blog

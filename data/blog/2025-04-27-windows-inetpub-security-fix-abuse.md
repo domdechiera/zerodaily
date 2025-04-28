@@ -2,7 +2,7 @@
 title: 'Windows "inetpub" Security Fix Abused to Block Updates: New Vulnerability Emerges'
 date: '2025-04-27'
 authors: ['zerodaily']
-tags: ['windows', 'microsoft', 'vulnerability', 'exploit', 'incident-response']
+tags: ['exploit', 'industry-news']
 draft: false
 summary: 'A recent Windows security update intended to mitigate a symlink vulnerability (CVE-2025-21204) has introduced a new weakness: regular users can abuse the newly created inetpub folder to block all future Windows updates, leaving systems exposed to unpatched threats.'
 type: Blog

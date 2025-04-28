@@ -2,7 +2,7 @@
 title: 'Microsoft Defender XDR False Positive Exposes 1,700+ Sensitive Documents in Public Data Leak'
 date: '2025-04-26'
 authors: ['zerodaily']
-tags: ['microsoft', 'data-breach', 'incident-response', 'cloud', 'windows']
+tags: ['data-breach', 'industry-news']
 draft: false
 summary: 'A false positive in Microsoft Defender XDR led hundreds of organizations to upload over 1,700 sensitive Adobe Acrobat files to the public ANY.RUN malware sandbox, exposing proprietary and confidential data.'
 type: Blog
