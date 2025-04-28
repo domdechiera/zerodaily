@@ -2,7 +2,7 @@
 title: 'No Evidence of New TikTok Hack: R00TK1T ISC CYBER TEAM’s 972,000 Password Leak Debunked'
 date: '2025-04-24'
 authors: ['zerodaily']
-tags: ['data-breach', 'social-media', 'authentication', 'incident-response']
+tags: ['industry-news']
 draft: false
 summary: 'The hacker group R00TK1T ISC CYBER TEAM claims to have leaked 972,000 TikTok user credentials and is demanding 50 BTC for further silence.'
 type: Blog

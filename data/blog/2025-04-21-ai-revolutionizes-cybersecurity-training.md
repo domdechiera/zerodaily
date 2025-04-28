@@ -2,7 +2,7 @@
 title: 'AI Revolutionizes Cybersecurity Training: Meet ARCeR, the Intelligent Cyber Range Creator'
 date: '2025-04-21'
 authors: ['domdechiera']
-tags: ['artificial-intelligence', 'training', 'industry-news', 'research']
+tags: ['artificial-intelligence', 'research']
 draft: false
 summary: 'AI tool ARCeR automates cyber‑range creation, slashes costs, and boosts incident‑response skills—no deep technical expertise required.'
 type: Blog

@@ -2,7 +2,7 @@
 title: 'Microsoft Office 365 MFA Bypassed by SessionShark Phishing Kit'
 date: '2025-04-26'
 authors: ['zerodaily']
-tags: ['microsoft', 'phishing', 'authentication', 'vulnerability', 'cloud']
+tags: ['phishing', 'exploit']
 draft: false
 summary: 'Security researchers have discovered SessionShark, a phishing-as-a-service toolkit that can bypass Microsoft Office 365 MFA by stealing session tokens, highlighting new risks for organizations relying on multi-factor authentication.'
 type: Blog

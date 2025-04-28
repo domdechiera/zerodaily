@@ -2,7 +2,7 @@
 title: "ToyMaker’s LAGTOY Backdoor Enables CACTUS Ransomware Double Extortion Attacks"
 date: '2025-04-26'
 authors: ['zerodaily']
-tags: ['malware', 'ransomware', 'exploit', 'incident-response', 'cyber-attack']
+tags: ['cyber-attack', 'industry-news']
 draft: false
 summary: 'ToyMaker, a financially motivated Initial Access Broker, leverages its custom LAGTOY backdoor to compromise organizations and sell access to CACTUS ransomware affiliates, fueling double extortion attacks.'
 type: Blog

@@ -2,7 +2,7 @@
 title: 'North Korean Hackers Spread Malware via Fake Crypto Firms and Job Interview Lures'
 date: '2025-04-27'
 authors: ['zerodaily']
-tags: ['north-korea', 'malware', 'phishing', 'cryptocurrency', 'threat-intelligence', 'exploit']
+tags: ['phishing', 'malware']
 draft: false
 summary: 'North Korean state-sponsored hackers are targeting job seekers and cryptocurrency firms with sophisticated malware campaigns. Attackers use fake recruiters, trojanized job interviews, and malicious crypto apps to steal credentials, deploy backdoors, and exfiltrate digital assets. This post details the latest campaign techniques, malware families, and actionable defense recommendations.'
 type: Blog

@@ -2,7 +2,7 @@
 title: 'CISA Issues Guidance After Oracle Cloud Credentials Leak: What Organizations Must Do'
 date: '2025-04-18'
 authors: ['default']
-tags: ['oracle', 'cloud', 'cisa', 'data-breach', 'incident-response', 'cyber-attack']
+tags: ['data-breach', 'cyber-attack']
 draft: false
 summary: 'CISA has issued urgent guidance following reports of leaked credentials from legacy Oracle cloud servers. Here’s what happened, what’s at risk, and the steps organizations must take to secure their environments.'
 type: Blog

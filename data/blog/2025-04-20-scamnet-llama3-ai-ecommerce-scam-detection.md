@@ -2,7 +2,7 @@
 title: 'ScamNet & Llama‑3: AI Tool Detects Fraudulent Shopping Sites with 95% Accuracy'
 date: '2025-04-20'
 authors: ['domdechiera']
-tags: ['artificial-intelligence', 'fraud', 'scam']
+tags: ['artificial-intelligence', 'research']
 draft: false
 summary: 'ScamNet uses the Llama‑3‑8B LLM to spot fraudulent e‑commerce sites with 95% accuracy via explainable AI, raising the bar for scam detection.'
 type: Blog
