@@ -5,4 +5,5 @@ export const robotsDisallow: string[] = [
   '/scripts/',
   '/projects/',
   '/authors/',
+  '/_next/',
 ]
