@@ -1,19 +1,19 @@
 [
   {
     "url": "https://www.zerodaily.me/",
-    "lastModified": "2025-04-28"
+    "lastModified": "2025-04-29"
   },
   {
     "url": "https://www.zerodaily.me/blog",
-    "lastModified": "2025-04-28"
+    "lastModified": "2025-04-29"
   },
   {
     "url": "https://www.zerodaily.me/resources",
-    "lastModified": "2025-04-28"
+    "lastModified": "2025-04-29"
   },
   {
     "url": "https://www.zerodaily.me/tags",
-    "lastModified": "2025-04-28"
+    "lastModified": "2025-04-29"
   },
   {
     "url": "https://www.zerodaily.me/blog/2025-04-08-apple-zero-days",
@@ -134,5 +134,9 @@
   {
     "url": "https://www.zerodaily.me/blog/2025-04-28-kali-linux-archive-signing-key-fix-apt-update-failing",
     "lastModified": "2025-04-28T00:00:00.000Z"
+  },
+  {
+    "url": "https://www.zerodaily.me/blog/2025-04-29-cybersecurity-experts-condemn-trump-order-chris-krebs-sentinelone",
+    "lastModified": "2025-04-29T00:00:00.000Z"
   }
 ]
