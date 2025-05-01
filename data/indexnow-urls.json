@@ -1,19 +1,19 @@
 [
   {
     "url": "https://www.zerodaily.me/",
-    "lastModified": "2025-04-30"
+    "lastModified": "2025-05-01"
   },
   {
     "url": "https://www.zerodaily.me/blog",
-    "lastModified": "2025-04-30"
+    "lastModified": "2025-05-01"
   },
   {
     "url": "https://www.zerodaily.me/resources",
-    "lastModified": "2025-04-30"
+    "lastModified": "2025-05-01"
   },
   {
     "url": "https://www.zerodaily.me/tags",
-    "lastModified": "2025-04-30"
+    "lastModified": "2025-05-01"
   },
   {
     "url": "https://www.zerodaily.me/blog/2025-04-08-apple-zero-days",
@@ -146,5 +146,9 @@
   {
     "url": "https://www.zerodaily.me/blog/2025-04-30-nebulous-mantis-nato-multi-stage-malware",
     "lastModified": "2025-04-30T00:00:00.000Z"
+  },
+  {
+    "url": "https://www.zerodaily.me/blog/2025-05-01-russian-cyberattacks-ukraine-increase-minimal-impact",
+    "lastModified": "2025-05-01T00:00:00.000Z"
   }
 ]
