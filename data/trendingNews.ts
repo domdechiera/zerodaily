@@ -10,15 +10,15 @@ export interface TrendingNewsItem {
 export const trendingNews: TrendingNewsItem[] = [
   {
     title:
-      'No Evidence of New TikTok Hack: R00TK1T ISC CYBER TEAM’s 972,000 Password Leak Debunked',
-    href: 'https://www.zerodaily.me/blog/2025-04-24-no-evidence-tiktok-hack-r00tk1t-password-leak-debunked',
-    date: '2025-04-24',
-  },
-  {
-    title:
       'ConnectWise Releases ScreenConnect 25.2.4 Security Patch for Critical ViewState Vulnerability (2025-04-25)',
     href: 'https://www.zerodaily.me/blog/2025-04-25-connectwise-screenconnect-25-2-4-security-patch',
     date: '2025-04-25',
+  },
+  {
+    title:
+      'No Evidence of New TikTok Hack: R00TK1T ISC CYBER TEAM’s 972,000 Password Leak Debunked',
+    href: 'https://www.zerodaily.me/blog/2025-04-24-no-evidence-tiktok-hack-r00tk1t-password-leak-debunked',
+    date: '2025-04-24',
   },
   {
     title:
