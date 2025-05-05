@@ -1,6 +1,7 @@
 {
+  "exploit": 6,
   "vulnerability": 11,
-  "industry-news": 18,
+  "industry-news": 17,
   "policy": 5,
   "data-breach": 5,
   "artificial-intelligence": 3,
@@ -8,6 +9,5 @@
   "malware": 3,
   "phishing": 3,
   "zero-day": 5,
-  "exploit": 5,
   "research": 3
 }
