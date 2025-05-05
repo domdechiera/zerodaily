@@ -6,4 +6,6 @@ export const robotsDisallow: string[] = [
   '/projects/',
   '/authors/',
   '/_next/',
+  'search.json',
+  'feed.xml',
 ]
