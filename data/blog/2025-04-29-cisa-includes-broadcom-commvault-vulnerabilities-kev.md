@@ -8,10 +8,6 @@ summary: 'CISA has added critical Broadcom and Commvault vulnerabilities to its 
 type: Blog
 ---
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <SpotifyEmbed trackId="5Ew7tvqm7ugzn2UkEgUrKx" type="episode" height={152} width="50%" />
-</div>
-
 CISA has expanded its Known Exploited Vulnerabilities (KEV) Catalog to include actively exploited vulnerabilities in Broadcom Brocade Fabric OS and Commvault software, following confirmed in-the-wild attacks. This article provides a technical deep dive into the vulnerabilities, exploitation methods, detection strategies, and sector impact, with actionable guidance for defenders and security leaders. [^1], [^2]
 
 ## Key Takeaways

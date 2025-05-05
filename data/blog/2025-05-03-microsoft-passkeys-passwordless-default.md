@@ -8,10 +8,6 @@ summary: 'Microsoft now makes passkeys the default for new accounts, acceleratin
 type: Blog
 ---
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <SpotifyEmbed trackId="11JLrBtygxeHvx7gDhlr6y" type="episode" height={152} width="50%" />
-</div>
-
 Microsoft has announced a major milestone in the evolution of digital security: new Microsoft accounts are now passwordless by default. This move, unveiled on May 1, 2025, coincides with the first-ever "World Passkey Day" and is set to impact billions of users worldwide. The change is part of Microsoft’s broader commitment to a safer, phishing-resistant future and comes amid a dramatic rise in password-based cyberattacks. [^1]
 
 ## Key Takeaways
