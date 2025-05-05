@@ -1,0 +1,90 @@
+---
+title: 'Golden Chickens: TerraStealerV2 and TerraLogger Credential Theft Identified'
+date: '2025-05-05'
+authors: ['zerodaily']
+tags: ['malware', 'research']
+draft: false
+summary: 'Researchers have identified TerraStealerV2 and TerraLogger, two new malware families from Golden Chickens targeting browser credentials and cryptocurrency wallets.'
+type: Blog
+---
+
+## Key Takeaways
+
+- Insikt Group (Recorded Future) discovered two new malware families—TerraStealerV2 and TerraLogger—linked to the Golden Chickens (Venom Spider) threat actor.
+- TerraStealerV2 targets browser credentials, crypto wallet data, and browser extension info, while TerraLogger is a modular keylogger.
+- Both are distributed via phishing and use trusted Windows utilities for stealth, but currently cannot bypass Chrome’s latest encryption.
+- The malware is under active development and expected to evolve rapidly, increasing risk for organizations and end users.
+- Severity rating: **High** — due to credential/wallet theft, modularity, and enterprise targeting.
+
+## What Happened?
+
+In early 2025, the Insikt Group at Recorded Future uncovered two emerging malware families—TerraStealerV2 and TerraLogger—attributed to the Golden Chickens (aka Venom Spider) cybercrime group. Golden Chickens is known for its Malware-as-a-Service (MaaS) platform, which supplies sophisticated tools to other cybercriminals. The new malware strains were observed in spear-phishing campaigns targeting HR, finance, and engineering professionals, often using fake job applications as lures. [^1]
+
+## Technical Details
+
+The following section summarizes the technical findings and attack methods, as detailed in the original Insikt Group report and corroborated by secondary sources. [^1]
+
+### TerraStealerV2
+
+- Designed to extract browser credentials (especially from Chrome), cryptocurrency wallet data, and browser extension information.
+- Targets Chrome’s “Login Data” SQLite database but cannot decrypt credentials protected by Application Bound Encryption (ABE, post-July 2024).
+- Exfiltrates stolen data to Telegram bots and the domain wetransfers[.]io.
+- Delivered via LNK, MSI, DLL, and EXE files, leveraging trusted Windows tools (regsvr32.exe, mshta.exe) for stealth and sandbox evasion.
+- Employs anti-analysis checks, XOR string deobfuscation, and attempts to terminate Chrome processes to unlock credential files.
+
+### TerraLogger
+
+- Standalone keylogger, capturing keystrokes, window titles, and clipboard contents.
+- Stores logs locally (e.g., a.txt, op.txt, save.txt, f.txt) and currently lacks automated exfiltration or C2 communication.
+- Intended as a modular component for use with other Golden Chickens tools.
+
+## Indicators of Compromise (IoCs)
+
+Based on public research and reporting, the following IoCs are associated with this campaign. [^1]
+
+- Malicious domain: `wetransfers[.]io` (used for exfiltration and payload delivery)
+- Common dropped files: `a.txt`, `op.txt`, `save.txt`, `f.txt` (keylogger output)
+- Payload execution: `regsvr32.exe` used to execute OCX payloads
+- Delivery vectors: LNK, MSI, DLL, EXE files in phishing attachments
+- Telegram bot infrastructure for data exfiltration
+
+## Impact & Risks
+
+According to the Insikt Group and corroborating reports, the following risks and impacts are associated with TerraStealerV2 and TerraLogger:
+
+- Enables theft of browser credentials, crypto wallets, and sensitive enterprise data.
+- Modular design facilitates rapid evolution and integration with other malware (e.g., ransomware, backdoors).
+- Current versions cannot bypass Chrome ABE, but this limitation may be temporary as development continues.
+- Primary targets are organizations in North America and Europe, especially HR, finance, and engineering sectors.
+
+### Severity Rating
+
+**High** — The malware is actively developed, targets credentials and wallets, and is used in enterprise-focused spear-phishing campaigns. Modular design and MaaS distribution increase risk and potential impact. [^1]
+
+## Detection & Mitigation / Recommendations
+
+Security researchers and vendors recommend the following actions based on the Insikt Group’s findings and industry best practices:
+
+- Block or closely monitor execution of LOLBins (e.g., regsvr32.exe, mshta.exe, ie4uinit.exe, odbcconf.exe) in enterprise environments.
+- Educate staff to recognize spear-phishing and suspicious attachments (ZIP/ISO with LNK files).
+- Ensure Chrome and other browsers are updated to benefit from Application Bound Encryption (ABE).
+- Monitor for unusual outbound connections to Telegram and suspicious domains like wetransfers[.]io.
+- Use endpoint detection and response (EDR) solutions capable of detecting modular malware and sandbox evasion techniques.
+
+## Timeline
+
+- Jan–Apr 2025: Insikt Group observes TerraStealerV2 and TerraLogger samples in the wild.
+- May 1, 2025: Recorded Future publishes technical analysis and public advisory.
+- May 5, 2025: ZeroDaily publishes this in-depth analysis.
+
+## Final Thoughts
+
+The emergence of TerraStealerV2 and TerraLogger highlights the ongoing innovation and modularity in cybercriminal toolkits. While current versions have limitations (notably the inability to bypass Chrome ABE), rapid development is expected. Organizations should remain vigilant, update browser security, and monitor for evolving threats from Golden Chickens and similar MaaS providers.
+
+## Related Articles
+
+- [XorDDoS Linux DDoS Malware Global Campaign](</blog/2025-04-18-xorddos-linux-ddos-malware-global-campaign>)
+- [ToyMaker, LagToy, and Cactus Ransomware Supply Chain Attacks](</blog/2025-04-26-toymaker-lagtoy-cactus-ransomware-supply-chain>)
+- [Proton66 Bulletproof Hosting Leveraged in Global Malware & Ransomware Wave (CVE‑2024‑55591, CVE‑2025‑24472)](</blog/2025-04-21-cybercriminals-exploit-proton66-bulletproof-hosting>)
+
+[^1]: [Golden Chickens Unveils TerraStealerV2 and TerraLogger: New Credential Theft Tools Identified by Insikt Group](https://www.recordedfuture.com/research/terrastealerv2-and-terralogger)
