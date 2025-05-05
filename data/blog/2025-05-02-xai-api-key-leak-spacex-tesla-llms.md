@@ -8,10 +8,6 @@ summary: 'A developer at xAI inadvertently leaked an API key on GitHub, exposing
 type: Blog
 ---
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <SpotifyEmbed trackId="4KUAP9s1XF3iUzlm7R9lHt" type="episode" height={152} width="50%" />
-</div>
-
 ## Key Takeaways
 
 - An xAI developer leaked a private API key on GitHub, granting access to internal LLMs tailored for SpaceX, Tesla, and Twitter/X.
