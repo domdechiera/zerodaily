@@ -18,11 +18,11 @@ type: Blog
 
 ## What Happened?
 
-In early 2025, the Insikt Group at Recorded Future uncovered two emerging malware families—TerraStealerV2 and TerraLogger—attributed to the Golden Chickens (aka Venom Spider) cybercrime group. Golden Chickens is known for its Malware-as-a-Service (MaaS) platform, which supplies sophisticated tools to other cybercriminals. The new malware strains were observed in spear-phishing campaigns targeting HR, finance, and engineering professionals, often using fake job applications as lures. [^1]
+In early 2025, the Insikt Group at Recorded Future uncovered two emerging malware families—TerraStealerV2 and TerraLogger—attributed to the Golden Chickens (aka Venom Spider) cybercrime group. Golden Chickens is known for its Malware-as-a-Service (MaaS) platform, which supplies sophisticated tools to other cybercriminals. The new malware strains were observed in spear-phishing campaigns targeting HR, finance, and engineering professionals, often using fake job applications as lures. [^1], [^2]
 
 ## Technical Details
 
-The following section summarizes the technical findings and attack methods, as detailed in the original Insikt Group report and corroborated by secondary sources. [^1]
+The following section summarizes the technical findings and attack methods, as detailed in the original Insikt Group report and corroborated by secondary sources. [^1], [^2]
 
 ### TerraStealerV2
 
@@ -40,7 +40,7 @@ The following section summarizes the technical findings and attack methods, as d
 
 ## Indicators of Compromise (IoCs)
 
-Based on public research and reporting, the following IoCs are associated with this campaign. [^1]
+Based on public research and reporting, the following IoCs are associated with this campaign. [^1], [^2]
 
 - Malicious domain: `wetransfers[.]io` (used for exfiltration and payload delivery)
 - Common dropped files: `a.txt`, `op.txt`, `save.txt`, `f.txt` (keylogger output)
@@ -59,7 +59,7 @@ According to the Insikt Group and corroborating reports, the following risks and
 
 ### Severity Rating
 
-**High** — The malware is actively developed, targets credentials and wallets, and is used in enterprise-focused spear-phishing campaigns. Modular design and MaaS distribution increase risk and potential impact. [^1]
+**High** — The malware is actively developed, targets credentials and wallets, and is used in enterprise-focused spear-phishing campaigns. Modular design and MaaS distribution increase risk and potential impact. [^1], [^2]
 
 ## Detection & Mitigation / Recommendations
 
@@ -74,7 +74,7 @@ Security researchers and vendors recommend the following actions based on the In
 ## Timeline
 
 - Jan–Apr 2025: Insikt Group observes TerraStealerV2 and TerraLogger samples in the wild.
-- May 1, 2025: Recorded Future publishes technical analysis and public advisory.
+- May 1, 2025: Recorded Future publishes technical analysis and public advisory. [^1]
 - May 5, 2025: ZeroDaily publishes this in-depth analysis.
 
 ## Final Thoughts
@@ -88,3 +88,4 @@ The emergence of TerraStealerV2 and TerraLogger highlights the ongoing innovatio
 - [Proton66 Bulletproof Hosting Leveraged in Global Malware & Ransomware Wave (CVE‑2024‑55591, CVE‑2025‑24472)](</blog/2025-04-21-cybercriminals-exploit-proton66-bulletproof-hosting>)
 
 [^1]: [Golden Chickens Unveils TerraStealerV2 and TerraLogger: New Credential Theft Tools Identified by Insikt Group](https://www.recordedfuture.com/research/terrastealerv2-and-terralogger)
+[^2]: [Golden Chickens Deploy TerraStealerV2 to Steal Browser Credentials and Crypto Wallet Data](https://thehackernews.com/2025/05/golden-chickens-deploy-terrastealerv2.html)
