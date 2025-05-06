@@ -18,7 +18,7 @@ type: Blog
 
 ## Background
 
-DragonForce ransomware operations emerged in August 2023, originating from Malaysia and initially presenting as a pro-Palestine hacktivist collective. Over time, the group’s focus shifted toward financial gain, while retaining elements of political targeting. By March 2025, DragonForce had rebranded as a "cartel", pioneering a distributed affiliate model that enables threat actors of varying skill levels to launch ransomware campaigns under their own brands using DragonForce’s infrastructure. [^1], [^3]
+DragonForce ransomware operations emerged in August 2023, originating from Malaysia and initially presenting as a pro-Palestine hacktivist collective. Over time, the group’s focus shifted toward financial gain, while retaining elements of political targeting. By March 2025, DragonForce had rebranded as a "cartel", pioneering a distributed affiliate model that enables threat actors of varying skill levels to launch ransomware campaigns under their own brands using DragonForce’s infrastructure. [^1], [^2]
 
 ## Technical Analysis and Tactics
 
@@ -26,13 +26,13 @@ The following details are drawn from original research sources including Securew
 
 - **Affiliate Model:** DragonForce’s distributed model provides affiliates with admin panels, encryption and negotiation tools, file storage, Tor-based leak sites, and support services. Affiliates are not required to use DragonForce’s ransomware, increasing operational flexibility. [^1]
 - **Victimology:** The group has targeted government institutions, law firms, medical practices, commercial enterprises, and major UK retailers. Notable campaigns have affected organizations in Israel, India, Saudi Arabia, and the UK.
-- **Initial Access:** DragonForce commonly uses phishing, exploitation of known vulnerabilities, and credential stuffing attacks on RDP and VPN services. Leaked or stolen credentials are also leveraged for access to internet-facing systems. [^3]
-- **Tools and Payloads:** The group uses Cobalt Strike, mimikatz, Advanced IP Scanner, PingCastle, SystemBC backdoor, and other remote management utilities. The ransomware payload is derived from LockBit 3.0 source code, a tactic shared by other emerging groups. [^2]
+- **Initial Access:** DragonForce commonly uses phishing, exploitation of known vulnerabilities, and credential stuffing attacks on RDP and VPN services. Leaked or stolen credentials are also leveraged for access to internet-facing systems. [^2]
+- **Tools and Payloads:** The group uses Cobalt Strike, mimikatz, Advanced IP Scanner, PingCastle, SystemBC backdoor, and other remote management utilities. The ransomware payload is derived from LockBit 3.0 source code, a tactic shared by other emerging groups. [^3]
 - **Exploited Vulnerabilities:**
   - CVE-2021-44228 (Apache Log4j2 – Log4Shell)
   - CVE-2023-46805, CVE-2024-21887, CVE-2024-21893 (Ivanti Connect Secure/Policy Secure)
   - CVE-2024-21412 (Windows SmartScreen)
-- **Multi-Extortion:** DragonForce threatens both data leakage and reputational harm, operating leak sites on Tor to publish stolen data. [^3]
+- **Multi-Extortion:** DragonForce threatens both data leakage and reputational harm, operating leak sites on Tor to publish stolen data. [^2]
 
 ## Timeline of Activity
 
