@@ -97,4 +97,4 @@ Avoid these common GDPR security mistakes:
 
 - [Official EDPB Guidelines](https://edpb.europa.eu/our-work-tools/general-guidance/guidelines-recommendations-best-practices_en)
 - [ENISA Security Recommendations](https://www.enisa.europa.eu/publications/recommendations-on-shaping-technology-according-to-gdpr-provisions)
-- [Data Protection Impact Assessment Guide](/resources/compliance-frameworks/dpia-guide)
+- [Data Protection Impact Assessment Guide](/resources/compliance-frameworks/ddata-protection-impact-assessment-dpia-guide)
