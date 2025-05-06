@@ -33,13 +33,13 @@ Specifics about the vulnerability, exploit chain, attack vector, affected versio
 
 Describe the consequences for organizations, users, or the broader ecosystem. Detail who/what is affected and potential outcomes.
 
-## Detection & Mitigation / Recommendations
+## Recommendations
 
 Actionable steps for organizations and/or users. Include patching, monitoring, configuration guidance, and official recommendations. Split into sub-sections if needed (e.g., "### For Organization").
 
 ## Timeline
 
-Chronological list of key dates: discovery, exploitation, disclosure, patch, public advisory, etc. Only if citations provide timing details.
+Chronological list of key dates: discovery, exploitation, disclosure, patch, public advisory, etc. Only if citations provide timing details. ZeroDaily articles should NOT be part of the timeline.
 
 ## Final Thoughts
 
