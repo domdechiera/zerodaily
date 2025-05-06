@@ -1,13 +1,13 @@
 {
-  "vulnerability": 11,
-  "zero-day": 5,
-  "exploit": 6,
-  "data-breach": 5,
-  "cyber-attack": 10,
-  "policy": 5,
-  "industry-news": 17,
+  "vulnerability": 12,
+  "exploit": 7,
   "malware": 4,
-  "artificial-intelligence": 3,
   "research": 4,
-  "phishing": 3
+  "industry-news": 17,
+  "policy": 5,
+  "data-breach": 5,
+  "artificial-intelligence": 3,
+  "cyber-attack": 10,
+  "phishing": 3,
+  "zero-day": 5
 }
