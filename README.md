@@ -9,7 +9,7 @@ ZeroDaily, a cybersecurity news platform that delivers timely security news, ins
 - Frontend: Next.js with Tailwind CSS
 - Email: Resend for newsletter subscriptions
 - Deployment: Vercel
-- Version Control: GitHub
+- Version Control: Git
 - Content: Markdown with contentlayer
 
 ### Core Features
@@ -44,13 +44,12 @@ For a complete list of pending tasks and future development plans, see the [TODO
 
 We've enhanced the user interface to better suit a cybersecurity news platform:
 
-1. Created a custom lock icon logo representing security
-2. Updated the header with improved styling and prominence
-3. Redesigned the homepage to include:
+1. Updated the header with improved styling and prominence
+2. Redesigned the homepage to include:
    - A prominent hero section with cybersecurity focus
    - Improved content organization with a "Latest Updates" section
    - Enhanced newsletter signup section focused on security updates
-4. Customized the Categories and Resources pages to match cybersecurity themes
+3. Customized the Categories and Resources pages to match cybersecurity themes
 
 ## Setup Instructions
 
@@ -103,9 +102,9 @@ For each major component, we're considering:
    - Performance and loading speed
 
 3. **Security Considerations**
-   - Content delivery security
+   - Secure content delivery
    - Newsletter subscription data handling
-   - Protection against common web vulnerabilities
+   - Protection against common web vulnerabilities (WAF)
 
 4. **Scalability Planning**
    - Content organization as volume grows
